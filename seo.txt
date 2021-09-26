@@ -1,0 +1,6 @@
+- Estructura de HTML5
+- Utilizar cdns 
+- En la etiqueta a poner atributo rel="noopener"
+- No usar enlaces muertos
+- Poner alt en todas las imagenes
+- Placeholder en los inputs

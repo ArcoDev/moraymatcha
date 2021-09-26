@@ -1,0 +1,14 @@
+.ad {
+    width: 100%;
+    height: 32px;
+    background: $black;
+    @include grid(1);
+    place-items: center;
+
+    p {
+        color: $white;
+        font-size: 0.625rem;
+        font-family: "InterstateBold";
+        margin-bottom: 0;
+    }
+}

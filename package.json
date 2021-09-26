@@ -1,0 +1,36 @@
+{
+  "name": "test_vinimos",
+  "version": "1.0.0",
+  "description": "Test para postulacion para vacabte de desarrollo web",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArcoDev/vinimos.git"
+  },
+  "keywords": [
+    "HTML5",
+    "SASS",
+    "JAVASCRIPT",
+    "PHP",
+    "MYSQL",
+    "NODE",
+    "JS",
+    "BOOTSTRAP"
+  ],
+  "author": "Christian Acosta (arcodev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArcoDev/vinimos/issues"
+  },
+  "homepage": "https://github.com/ArcoDev/vinimos#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-notify": "^4.0.0"
+  }
+}

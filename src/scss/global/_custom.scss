@@ -1,0 +1,85 @@
+/* Fonts */
+@font-face {
+    font-family: "InterstateBold";
+    src: url('../font/Interstate-bold.ttf');
+}
+
+@font-face {
+    font-family: "InterstateLight";
+    src: url('../font/Interstate-light.ttf');
+}
+
+*,
+html {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "InterstateLight";
+}
+
+/*custom carousel*/
+.carousel-inner {
+    max-height: 450px;
+}
+
+.box-text {
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    padding: 0 0 0 2.3rem;
+    width: 35%;
+    h1 {
+        color: $white!important;
+        font-weight: 400;
+    }
+    .btn-buy {
+        width: 248px;
+        height: 40px;
+        background: $white;
+        color: $black;
+        font-family: "InterstateLight";
+        font-weight: 700;
+        line-height: 16.7px;
+        transition: .3s ease-out;
+        &:hover {
+            background: $golden;
+            color: $white;
+            cursor: pointer;
+            transform: scale(1.03);
+        }
+    }
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #10000094;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+    cursor: default;
+}
+
+.carousel-control-prev-icon {
+    @include controls;
+    left: 15%;
+    background-image: url('../img/arrowLeft.svg') !important;
+
+}
+
+.carousel-control-next-icon {
+    @include controls;
+    left: -65rem;
+    background-image: url('../img/arrowRight.svg') !important;
+}

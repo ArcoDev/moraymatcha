@@ -1,0 +1,183 @@
+/* Fonts */
+@font-face {
+  font-family: "InterstateBold";
+  src: url("../font/Interstate-bold.ttf");
+}
+@font-face {
+  font-family: "InterstateLight";
+  src: url("../font/Interstate-light.ttf");
+}
+*,
+html {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "InterstateLight";
+}
+
+/*custom carousel*/
+.carousel-inner {
+  max-height: 450px;
+}
+
+.box-text {
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+  padding: 0 0 0 2.3rem;
+  width: 35%;
+}
+.box-text h1 {
+  color: #ffffff !important;
+  font-weight: 400;
+}
+.box-text .btn-buy {
+  width: 248px;
+  height: 40px;
+  background: #ffffff;
+  color: #000000;
+  font-family: "InterstateLight";
+  font-weight: 700;
+  line-height: 16.7px;
+  transition: 0.3s ease-out;
+}
+.box-text .btn-buy:hover {
+  background: #C59D5D;
+  color: #ffffff;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #10000094;
+}
+
+button:not(:disabled),
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled) {
+  cursor: default;
+}
+
+.carousel-control-prev-icon {
+  padding: 1rem;
+  position: absolute;
+  bottom: 4%;
+  width: 4rem !important;
+  cursor: pointer;
+  left: 15%;
+  background-image: url("../img/arrowLeft.svg") !important;
+}
+
+.carousel-control-next-icon {
+  padding: 1rem;
+  position: absolute;
+  bottom: 4%;
+  width: 4rem !important;
+  cursor: pointer;
+  left: -65rem;
+  background-image: url("../img/arrowRight.svg") !important;
+}
+
+.ad {
+  width: 100%;
+  height: 32px;
+  background: #000000;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+}
+.ad p {
+  color: #ffffff;
+  font-size: 0.625rem;
+  font-family: "InterstateBold";
+  margin-bottom: 0;
+}
+
+.navegation {
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 115px;
+  height: 30.81px;
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 12rem 0 2.3rem;
+}
+
+.items {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0.5rem 18rem 0 0;
+}
+.items a {
+  font-size: 0.875rem;
+  color: #000000;
+  font-weight: 400;
+  line-height: 16.1px;
+  transition: 0.3s ease-in-out;
+}
+.items a:hover {
+  color: #C59D5D;
+}
+
+.search input {
+  width: 248px;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 0.3rem 1.3rem;
+}
+
+.icon-search {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-left: -3px;
+  background-image: url("../img/search.svg");
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 0 2rem;
+}
+.icons .user {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-image: url("../img/user.svg");
+}
+.icons .cart {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-image: url("../img/cart.svg");
+}
+.icons select {
+  outline: none;
+  border: none;
+}
