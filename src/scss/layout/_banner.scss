@@ -14,22 +14,26 @@
         height: 397px;
         left: 16px;
         border-radius: 8px;
+        background-image: url('../img/mov-banner1.png');
+
     }
 
     p {
-        font-size: 0.75rem;
-        font-family: 'InterstateLight';
-        font-weight: 400;
+        font: normal normal 400 0.75rem/12px InterstateLight;
         letter-spacing: 0.4em;
-        line-height: 12px;
 
         &::before {
             content: '';
             position: absolute;
             margin: 2rem 0 0 6.5rem;
             width: 3%;
-            height: 3px;
+            height: 2px;
             background: $white;
+
+            @include mobile {
+                width: 14%;
+
+            }
         }
     }
 
@@ -40,6 +44,7 @@
         font-weight: bold;
         line-height: 46px;
         margin: 2.25rem 0;
+
         @include mobile {
             width: 302px;
             line-height: 27.6px;
@@ -52,5 +57,10 @@
     a {
         @include btnBuy(248px, 40px, $white, $black);
         font-weight: bold;
+
+        @include mobile {
+            @include btnBuy(200px, 40px, $white, $black);
+
+        }
     }
 }

@@ -154,7 +154,6 @@ button:not(:disabled),
   width: 100%;
   height: 32px;
   background: #000000;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
@@ -170,7 +169,6 @@ button:not(:disabled),
   width: 100%;
   height: 70px;
   background: #ffffff;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -257,7 +255,6 @@ button:not(:disabled),
 }
 
 .shop {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
@@ -296,7 +293,6 @@ button:not(:disabled),
 .container-wines .box-wines {
   width: 224.95px;
   height: 224.95px;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
@@ -356,7 +352,6 @@ button:not(:disabled),
 }
 
 .recommended {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
@@ -376,7 +371,6 @@ button:not(:disabled),
 }
 
 .banner {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
@@ -396,22 +390,25 @@ button:not(:disabled),
     height: 397px;
     left: 16px;
     border-radius: 8px;
+    background-image: url("../img/mov-banner1.png");
   }
 }
 .banner p {
-  font-size: 0.75rem;
-  font-family: "InterstateLight";
-  font-weight: 400;
+  font: normal normal 400 0.75rem/12px InterstateLight;
   letter-spacing: 0.4em;
-  line-height: 12px;
 }
 .banner p::before {
   content: "";
   position: absolute;
   margin: 2rem 0 0 6.5rem;
   width: 3%;
-  height: 3px;
+  height: 2px;
   background: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .banner p::before {
+    width: 14%;
+  }
 }
 .banner h3 {
   width: 735px;
@@ -438,4 +435,103 @@ button:not(:disabled),
   border-radius: 4px;
   padding: 0.5rem 0 0 0;
   font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .banner a {
+    width: 200px;
+    height: 40px;
+    background: #ffffff;
+    color: #000000 !important;
+    border-radius: 4px;
+    padding: 0.5rem 0 0 0;
+  }
+}
+
+.sold {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  padding: 5rem 0 1rem 0;
+}
+@media screen and (max-width: 767px) {
+  .sold {
+    padding: 25rem 0 0 0;
+  }
+}
+.sold h2 {
+  font-size: 1.78rem;
+  font-weight: 700;
+  line-height: 32.2px;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .sold h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.container-sold {
+  width: 95%;
+  display: flex;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .container-sold {
+    flex-wrap: wrap;
+  }
+}
+.container-sold .box-sold {
+  width: 25%;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.4s ease-out;
+}
+@media screen and (max-width: 767px) {
+  .container-sold .box-sold {
+    width: 50%;
+  }
+}
+.container-sold .box-sold img {
+  transition: all 0.5s ease-out;
+}
+@media screen and (max-width: 767px) {
+  .container-sold .box-sold img {
+    width: 100%;
+  }
+}
+.container-sold .box-sold h4 {
+  font: normal normal normal 0.75rem/12px InterstateBold;
+}
+.container-sold .box-sold h5 {
+  font: normal normal bold 1rem/18px TimesBold;
+}
+.container-sold .box-sold h6 {
+  font: normal normal bold 1rem/19px InterstateBold;
+}
+.container-sold .box-sold p {
+  font: normal normal bold 0.75rem/18px InterstateLight;
+}
+.container-sold .box-sold a {
+  width: auto;
+  height: auto;
+  background: #000000;
+  color: #ffffff !important;
+  border-radius: 4px;
+  padding: 0.5rem 0 0 0;
+  padding: 0.4rem 7rem;
+}
+@media screen and (max-width: 767px) {
+  .container-sold .box-sold a {
+    padding: 0.4rem 1rem;
+  }
+}
+.container-sold .box-sold:hover {
+  background: #c59d5d31;
+}
+.container-sold .box-sold:hover img {
+  transform: translateY(-55px);
+}
+.container-sold .box-sold:hover a {
+  background: #C59D5D;
 }
