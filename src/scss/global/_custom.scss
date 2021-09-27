@@ -11,13 +11,9 @@
 
 @font-face {
     font-family: "TimesBold";
-    src: url('../font/TimesBold.ttf');
+    src: url('../font/Times.ttf');
 }
 
-@font-face {
-    font-family: "TimesRegular";
-    src: url('../font/TimesRegular.ttf');
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
 
@@ -37,16 +33,6 @@ body {
 }
 
 //Custom carousel
-.carousel-inner {
-    max-height: 450px;
-
-    @include mobile {
-        height: 700px;
-        border: 1px solid red;
-    }
-}
-
-
 .box-text {
     position: absolute;
     top: 30%;
@@ -76,6 +62,7 @@ body {
         line-height: 16.7px;
         transition: .3s ease-out;
         margin: 1rem 0;
+
         &:hover {
             background: $golden;
             color: $white;
@@ -98,8 +85,30 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #10000094;
+    background: #A8A8A8;
+    mix-blend-mode: multiply;
 }
+
+.slider {
+    width: 100%;
+    height: 460px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider1 {
+    background-image: url('../img/slider1.png');
+}
+
+.slider2 {
+    background-image: url('../img/slider2.jpg');
+}
+
+.slider3 {
+    background-image: url('../img/slider3.jpg');
+}
+
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -112,6 +121,7 @@ button:not(:disabled),
     @include controls;
     left: 22%;
     background-image: url('../img/arrowLeft.svg') !important;
+
     @include mobile {
         left: 40%;
     }
@@ -119,9 +129,10 @@ button:not(:disabled),
 
 .carousel-control-next-icon {
     @include controls;
-    left: -65rem;
+    left: -64rem;
     background-image: url('../img/arrowRight.svg') !important;
+
     @include mobile {
-        left:  -12rem;
+        left: -12rem;
     }
 }

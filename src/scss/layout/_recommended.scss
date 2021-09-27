@@ -1,0 +1,9 @@
+.recommended {
+    @include grid(1);
+    place-items: center;
+    font-family: 'TimesBold';
+
+    h2 {
+        @include titleH2;
+    }
+}

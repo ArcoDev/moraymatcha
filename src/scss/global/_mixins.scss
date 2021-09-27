@@ -9,10 +9,22 @@
     padding: 1rem;
     position: absolute;
     bottom: 4%;
-    width: 4rem!important;
+    width: 4rem !important;
     cursor: pointer;
+
     @include mobile {
         bottom: 1%;
+    }
+}
+
+//Encabezado de cada seccion 
+@mixin titleH2 {
+    font-size: 1.78rem;
+    font-weight: 700;
+    line-height: 32.2px;
+    margin-bottom: 2rem;
+    @include mobile {
+        font-size: 1.25rem;
     }
 }
 
@@ -22,6 +34,7 @@
         @content;
     }
 }
+
 @mixin tablet {
     @media screen and (min-width: #{$tablet}) {
         @content;
