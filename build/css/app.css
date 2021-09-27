@@ -546,6 +546,11 @@ button:not(:disabled),
 .container-sold .box-sold:hover img {
   transform: translateY(-55px);
 }
+@media screen and (max-width: 767px) {
+  .container-sold .box-sold:hover img {
+    transform: translateY(-35px);
+  }
+}
 .container-sold .box-sold:hover a {
   background: #C59D5D;
 }

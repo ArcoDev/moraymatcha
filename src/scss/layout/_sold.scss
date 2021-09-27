@@ -82,6 +82,10 @@
 
             img {
                 transform: translateY(-55px);
+
+                @include mobile {
+                    transform: translateY(-35px);
+                }
             }
 
             a {
