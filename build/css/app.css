@@ -475,6 +475,7 @@ button:not(:disabled),
   width: 95%;
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 767px) {
   .container-sold {
@@ -553,4 +554,51 @@ button:not(:disabled),
 }
 .container-sold .box-sold:hover a {
   background: #C59D5D;
+}
+
+.banner2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  width: 92%;
+  height: 225px;
+  margin: 2.3rem auto;
+  background-image: url("../img/banner2.png");
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .banner2 {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+    background-image: url("../img/mov-banner2.png");
+  }
+}
+.banner2 h3,
+.banner2 a {
+  position: relative;
+}
+.banner2 h3 {
+  margin: 3rem 0 0 0;
+}
+.banner2 a {
+  margin: -2.5rem 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  .banner2 a {
+    margin: -4rem 0 0 0;
+  }
+}
+.banner2::before {
+  content: "";
+  position: absolute;
+  width: 92%;
+  height: 225px;
+  background: #C4C4C4;
+  mix-blend-mode: multiply;
+}
+@media screen and (max-width: 767px) {
+  .banner2::before {
+    width: 100%;
+  }
 }

@@ -16,6 +16,7 @@
     width: 95%;
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
 
     @include mobile {
         flex-wrap: wrap;
