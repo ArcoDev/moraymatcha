@@ -1,5 +1,6 @@
 //Columnas
 @mixin grid($columns) {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat($columns, 1fr);
 }
@@ -23,9 +24,29 @@
     font-weight: 700;
     line-height: 32.2px;
     margin-bottom: 2rem;
+
     @include mobile {
         font-size: 1.25rem;
+        margin-bottom: 1rem;
     }
+}
+
+//Fondo banner 
+@mixin backBanner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+//Boton Comprar
+@mixin btnBuy($width, $height, $background, $color) {
+    width: $width;
+    height: $height;
+    background: $background;
+    color: $color!important;
+    border-radius: 4px;
+    padding: .5rem 0 0 0;
+
 }
 
 //Media queries

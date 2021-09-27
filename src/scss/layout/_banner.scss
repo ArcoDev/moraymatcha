@@ -1,0 +1,56 @@
+.banner {
+    @include grid(1);
+    place-items: center;
+    height: 308.59px;
+    @include backBanner;
+    background-image: url('../img/banner1.png');
+    color: #fff;
+    text-align: center;
+    padding: 2.988rem 0;
+
+    @include mobile {
+        position: absolute;
+        width: 328px;
+        height: 397px;
+        left: 16px;
+        border-radius: 8px;
+    }
+
+    p {
+        font-size: 0.75rem;
+        font-family: 'InterstateLight';
+        font-weight: 400;
+        letter-spacing: 0.4em;
+        line-height: 12px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            margin: 2rem 0 0 6.5rem;
+            width: 3%;
+            height: 3px;
+            background: $white;
+        }
+    }
+
+    h3 {
+        width: 735px;
+        font-size: 2.5rem;
+        font-family: 'TimesBold';
+        font-weight: bold;
+        line-height: 46px;
+        margin: 2.25rem 0;
+        @include mobile {
+            width: 302px;
+            line-height: 27.6px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0
+        }
+    }
+
+    a {
+        @include btnBuy(248px, 40px, $white, $black);
+        font-weight: bold;
+    }
+}
