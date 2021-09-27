@@ -11,4 +11,19 @@
     bottom: 4%;
     width: 4rem!important;
     cursor: pointer;
+    @include mobile {
+        bottom: 1%;
+    }
+}
+
+//Media queries
+@mixin mobile {
+    @media screen and (max-width: #{$mobile}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width: #{$tablet}) {
+        @content;
+    }
 }
