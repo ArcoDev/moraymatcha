@@ -26,12 +26,14 @@
         padding: 1rem;
         border-radius: 8px;
         transition: all .4s ease-out;
+
         @include mobile {
             width: 50%;
         }
 
         img {
             transition: all .5s ease-out;
+
             @include mobile {
                 width: 100%;
             }
@@ -39,10 +41,19 @@
 
         h4 {
             font: normal normal normal 0.75rem/12px InterstateBold;
+            margin: .5rem 0;
         }
 
         h5 {
             font: normal normal bold 1rem/18px TimesBold;
+
+            @include mobile {
+                font: normal normal bold 0.875rem/18px TimesBold;
+
+                &.txtBt {
+                    margin-bottom: 1.59rem;
+                }
+            }
         }
 
         h6 {
@@ -51,11 +62,16 @@
 
         p {
             font: normal normal bold 0.75rem/18px InterstateLight;
+
+            @include mobile {
+                font: normal normal bold 0.625rem/18px InterstateLight;
+            }
         }
 
         a {
             @include btnBuy(auto, auto, $black, $white);
             padding: .4rem 7rem;
+
             @include mobile {
                 padding: .4rem 1rem;
             }

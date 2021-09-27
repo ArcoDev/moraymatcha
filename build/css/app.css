@@ -502,15 +502,29 @@ button:not(:disabled),
 }
 .container-sold .box-sold h4 {
   font: normal normal normal 0.75rem/12px InterstateBold;
+  margin: 0.5rem 0;
 }
 .container-sold .box-sold h5 {
   font: normal normal bold 1rem/18px TimesBold;
+}
+@media screen and (max-width: 767px) {
+  .container-sold .box-sold h5 {
+    font: normal normal bold 0.875rem/18px TimesBold;
+  }
+  .container-sold .box-sold h5.txtBt {
+    margin-bottom: 1.59rem;
+  }
 }
 .container-sold .box-sold h6 {
   font: normal normal bold 1rem/19px InterstateBold;
 }
 .container-sold .box-sold p {
   font: normal normal bold 0.75rem/18px InterstateLight;
+}
+@media screen and (max-width: 767px) {
+  .container-sold .box-sold p {
+    font: normal normal bold 0.625rem/18px InterstateLight;
+  }
 }
 .container-sold .box-sold a {
   width: auto;
