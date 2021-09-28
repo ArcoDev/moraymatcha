@@ -704,7 +704,7 @@ button:not(:disabled),
 }
 @media screen and (max-width: 767px) {
   .box-news .mail h3 {
-    width: 200px;
+    width: 250px;
     font: normal normal bold 1.3rem/20px TimesBold;
   }
 }
