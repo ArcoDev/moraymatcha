@@ -385,10 +385,9 @@ button:not(:disabled),
 }
 @media screen and (max-width: 767px) {
   .banner {
-    position: absolute;
     width: 328px;
     height: 397px;
-    left: 16px;
+    margin: 0 auto;
     border-radius: 8px;
     background-image: url("../img/mov-banner1.png");
   }
@@ -455,7 +454,7 @@ button:not(:disabled),
 }
 @media screen and (max-width: 767px) {
   .sold {
-    padding: 28rem 0 0 0;
+    padding: 3rem 0 0 0;
   }
 }
 .sold h2 {

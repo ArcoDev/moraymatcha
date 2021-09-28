@@ -9,10 +9,9 @@
     padding: 2.988rem 0;
 
     @include mobile {
-        position: absolute;
         width: 328px;
         height: 397px;
-        left: 16px;
+        margin: 0 auto;
         border-radius: 8px;
         background-image: url('../img/mov-banner1.png');
 
