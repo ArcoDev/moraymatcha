@@ -771,6 +771,10 @@ button:not(:disabled),
   place-items: center;
   text-align: center;
   padding-bottom: 2rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/copa.svg");
 }
 .cancel h3 {
   font: normal normal 700 0.75rem/12px InterstateLight;
