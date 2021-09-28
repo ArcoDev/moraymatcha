@@ -601,3 +601,164 @@ button:not(:disabled),
     width: 100%;
   }
 }
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+}
+.benefits h2 {
+  font-size: 1.78rem;
+  font-weight: 700;
+  line-height: 32.2px;
+  margin-bottom: 2rem;
+  margin: 1rem 0 3.5rem 0;
+}
+@media screen and (max-width: 767px) {
+  .benefits h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .benefits h2 {
+    margin: 0.5rem 0 2rem 0;
+  }
+}
+.benefits .container-benefits {
+  width: 75%;
+  display: flex;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .benefits .container-benefits {
+    width: 95%;
+    flex-wrap: wrap;
+  }
+}
+.benefits .container-benefits .box-benefits {
+  width: 25%;
+  border-right: 1px solid #F0F0F0;
+}
+.benefits .container-benefits .box-benefits:nth-child(4) {
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  .benefits .container-benefits .box-benefits {
+    width: 50%;
+  }
+}
+.benefits .container-benefits img {
+  height: 45px;
+}
+.benefits .container-benefits p {
+  margin: 1rem auto;
+  font: normal normal bold 0.75rem/14px TimesBold;
+  color: #000000;
+}
+.benefits .container-benefits p.one {
+  width: 94px;
+}
+.benefits .container-benefits p.two {
+  width: 132px;
+}
+.benefits .container-benefits a {
+  margin: 1rem auto;
+  font: normal normal bold 0.75rem/14px TimesBold;
+  color: #000000;
+  width: 100% !important;
+  text-decoration: underline !important;
+  transition: 0.3s ease-out;
+}
+.benefits .container-benefits a:hover {
+  color: #C59D5D;
+}
+
+.newsletter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  margin: 5rem 0;
+  padding: 2rem 8rem;
+  background: #C59D5D;
+}
+@media screen and (max-width: 767px) {
+  .newsletter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 1rem;
+    margin: 3rem 0;
+  }
+}
+
+.box-news {
+  width: 100%;
+}
+.box-news .mail {
+  display: flex;
+  margin: 0 0 0.3rem 0;
+}
+.box-news .mail h3 {
+  font: normal normal bold 1.5rem/28px TimesBold;
+  margin: 0.3rem 0 0 0.3rem;
+}
+@media screen and (max-width: 767px) {
+  .box-news .mail h3 {
+    width: 200px;
+    font: normal normal bold 1.3rem/20px TimesBold;
+  }
+}
+.box-news p {
+  width: 442px;
+  font: normal normal 300 0.875rem/20px InterstateLight;
+}
+@media screen and (max-width: 767px) {
+  .box-news p {
+    width: 250px;
+  }
+}
+.box-news .box-form form {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .box-news .box-form form {
+    flex-direction: column;
+  }
+}
+.box-news .box-form form label {
+  font: normal normal bold 0.75rem/14px InterstateLight;
+  margin-bottom: 0.3rem;
+}
+.box-news .box-form form input {
+  width: 336px;
+  background: #C59D5D;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+}
+@media screen and (max-width: 767px) {
+  .box-news .box-form form input {
+    width: 333px;
+  }
+}
+.box-news .box-form form input::placeholder {
+  color: #000000;
+}
+.box-news .box-form form button {
+  width: 128px;
+  height: 48px;
+  background: #000000;
+  color: #ffffff !important;
+  border-radius: 4px;
+  padding: 0.5rem 0 0 0;
+  border: none;
+  padding: 0;
+  margin: 0.3rem 0 0 0.5rem;
+  font: normal normal bold 0.875rem/17px InterstateLight;
+}
+@media screen and (max-width: 767px) {
+  .box-news .box-form form button {
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
+}

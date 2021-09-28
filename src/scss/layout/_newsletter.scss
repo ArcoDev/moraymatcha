@@ -1,0 +1,81 @@
+.newsletter {
+    @include grid(2);
+    place-items: center;
+    margin: 5rem 0;
+    padding: 2rem 8rem;
+    background: $golden;
+
+    @include mobile {
+        @include grid(1);
+        padding: 2rem 1rem;
+        margin: 3rem 0;
+    }
+}
+
+.box-news {
+    width: 100%;
+
+    .mail {
+        display: flex;
+        margin: 0 0 .3rem 0;
+
+        h3 {
+            font: normal normal bold 1.5rem/28px TimesBold;
+            margin: .3rem 0 0 .3rem;
+
+            @include mobile {
+                width: 200px;
+                font: normal normal bold 1.3rem/20px TimesBold;
+
+            }
+        }
+    }
+
+    p {
+        width: 442px;
+        font: normal normal 300 0.875rem/20px InterstateLight;
+        @include mobile {
+            width: 250px;
+        }
+    }
+
+    .box-form form {
+        display: flex;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        label {
+            font: normal normal bold 0.75rem/14px InterstateLight;
+            margin-bottom: .3rem;
+        }
+
+        input {
+            width: 336px;
+            background: $golden;
+            border: none;
+            border-bottom: 1px solid $black;
+            outline: none;
+            @include mobile {
+                width: 333px;
+            }
+            &::placeholder {
+                color: $black;
+
+            }
+        }
+
+        button {
+            @include btnBuy(128px, 48px, $black, $white);
+            border: none;
+            padding: 0;
+            margin: .3rem 0 0 .5rem;
+            font: normal normal bold 0.875rem/17px InterstateLight;
+            @include mobile {
+                width: 100%;
+                margin: 1rem 0 0 0;
+            }
+        }
+    }
+}

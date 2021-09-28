@@ -1,0 +1,70 @@
+.benefits {
+    @include grid(1);
+    place-items: center;
+
+    h2 {
+        @include titleH2;
+        margin: 1rem 0 3.5rem 0;
+        @include mobile {
+            margin: .5rem 0 2rem 0;
+        }
+    }
+
+    .container-benefits {
+        width: 75%;
+        display: flex;
+        text-align: center;
+
+        @include mobile {
+            width: 95%;
+            flex-wrap: wrap;
+        }
+
+        .box-benefits {
+            width: 25%;
+            border-right: 1px solid #F0F0F0;
+
+            &:nth-child(4) {
+                border: none;
+            }
+
+            @include mobile {
+                width: 50%;
+            }
+        }
+
+        @mixin fontBenefits {
+            margin: 1rem auto;
+            font: normal normal bold 0.75rem/14px TimesBold;
+            color: $black;
+        }
+
+        img {
+            height: 45px;
+        }
+
+        p {
+            @include fontBenefits;
+
+            &.one {
+                width: 94px;
+            }
+
+            &.two {
+                width: 132px;
+            }
+        }
+
+        a {
+            @include fontBenefits;
+            width: 100% !important;
+            text-decoration: underline !important;
+            transition: .3s ease-out;
+
+            &:hover {
+                color: $golden;
+            }
+        }
+
+    }
+}
