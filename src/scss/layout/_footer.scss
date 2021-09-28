@@ -1,0 +1,77 @@
+.footer {
+    background: $black;
+    padding: 3rem 0 .5rem 0;
+
+    .row {
+        color: $white;
+        
+        .qr-mov {
+            display: none;
+        }
+        .mov-line {
+            display: none;
+        }
+        
+        @include mobile {
+            text-align: center;
+
+            .w-50 {
+                width: 60% !important;
+                margin: 0 auto 2rem auto;
+            }
+
+            .qr-desk {
+                display: none;
+            }
+
+            .copyright {
+                display: flex;
+                p {
+                    text-align: left;
+                    margin: 2rem 0 0 1rem;
+                }
+            }
+            .qr-mov {
+                display: block;
+            }
+            .mov-line {
+                display: block;
+            }
+            .d-flex {
+                flex-direction: column;
+                p {
+                    display: none;
+                }
+            }
+        }
+
+
+        h3 {
+            font: normal normal 700 1rem/13.34px InterstateLight;
+            margin: 3rem 0 2rem 0;
+        }
+
+        p {
+            font: normal normal 100 0.75rem/13.34px InterstateLight;
+            transition: .3s ease-out;
+
+            &:hover {
+                color: $golden;
+            }
+
+            a {
+                color: $white;
+                transition: .3s ease-out;
+
+                &:hover {
+                    color: $golden;
+                }
+            }
+        }
+
+        h4 {
+            font: normal normal 400 1rem/13.34px InterstateLight;
+
+        }
+    }
+}

@@ -4,7 +4,8 @@
     background: $black;
     @include grid(1);
     place-items: center;
-
+    position: fixed;
+    z-index: 6;
     p {
         color: $white;
         font-size: 0.625rem;

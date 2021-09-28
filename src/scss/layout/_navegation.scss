@@ -3,6 +3,10 @@
     height: 70px;
     background: $white;
     @include grid(2);
+    position: fixed;
+    z-index: 5;
+    top: 3%;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .box {
