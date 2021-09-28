@@ -764,3 +764,47 @@ button:not(:disabled),
     margin: 1rem 0 0 0;
   }
 }
+
+.cancel {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.cancel h3 {
+  font: normal normal 700 0.75rem/12px InterstateLight;
+  letter-spacing: 0.4em;
+}
+.cancel h3::before {
+  content: "";
+  position: absolute;
+  margin: 2rem 0 0 6.5rem;
+  width: 3%;
+  height: 2px;
+  background: #C59D5D;
+}
+@media screen and (max-width: 767px) {
+  .cancel h3::before {
+    width: 14%;
+  }
+}
+.cancel p {
+  width: 383px;
+  font: normal normal 300 0.75rem/12px InterstateLight;
+  margin: 3rem 0 1rem 0;
+}
+@media screen and (max-width: 767px) {
+  .cancel p {
+    width: 260px;
+  }
+}
+.cancel a {
+  color: #000000;
+  text-decoration: underline !important;
+  font: normal normal 700 0.75rem/12px InterstateLight;
+  transition: 0.3s ease-out;
+}
+.cancel a:hover {
+  color: #C59D5D;
+}
