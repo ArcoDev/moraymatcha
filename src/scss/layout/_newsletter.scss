@@ -10,6 +10,9 @@
         padding: 2rem 1rem;
         margin: 3rem 0;
     }
+    @include tablet {
+        padding: 2rem;
+    }
 }
 
 .box-news {

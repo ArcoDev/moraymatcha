@@ -30,6 +30,7 @@ body {
     padding: 0;
     font-size: 16px;
     font-family: "InterstateLight";
+    overflow-x: hidden;
 }
 
 //Custom carousel
@@ -140,5 +141,21 @@ button:not(:disabled),
 
     @include mobile {
         left: -12rem;
+    }
+
+    @include tablet {
+        left: -47rem;
+    }
+}
+
+.box-glider {
+    padding: 1rem;
+    transition: 1s ease-out;
+
+    &:hover {
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-image: url('../img/circle.svg');
     }
 }

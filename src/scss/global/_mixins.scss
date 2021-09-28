@@ -49,13 +49,13 @@
 
 //Media queries
 @mixin mobile {
-    @media screen and (max-width: #{$mobile}) {
+    @media screen and (max-width: $mobile) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media screen and (min-width: #{$tablet}) {
+    @media screen and (min-width: $tabletH) and (max-width: $tabletV) {
         @content;
     }
 }

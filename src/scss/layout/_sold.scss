@@ -31,6 +31,10 @@
         @include mobile {
             width: 50%;
         }
+        @include tablet {
+            width: 50%;
+            margin: 2rem 0;
+        }
 
         img {
             transition: all .5s ease-out;
@@ -87,6 +91,7 @@
                 @include mobile {
                     transform: translateY(-35px);
                 }
+                
             }
 
             a {

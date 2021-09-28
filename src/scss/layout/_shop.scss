@@ -20,6 +20,10 @@
         width: 328px;
         flex-direction: column;
     }
+    @include tablet {
+        width: 90%;
+        flex-wrap: wrap;
+    }
 
     .box-wines {
         width: 224.95px;
@@ -35,6 +39,9 @@
             width: 328px;
             height: 70px;
             margin-bottom: .5rem;
+        }
+
+        @include tablet {
         }
 
         &.tintos {
@@ -64,6 +71,9 @@
             @include mobile {
                 width: 328px;
                 height: 70px;
+            }
+            @include tablet {
+                width: 40%;
             }
         }
 
