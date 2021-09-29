@@ -148,10 +148,52 @@ button:not(:disabled),
 }
 
 
-/*Esilos del glider js
+/*Esilos del glider js*/
 .box-glider {
     padding: 1rem;
-    transition: all 1s ease-out;
+
+    h4 {
+        font: normal normal normal 0.75rem/12px InterstateBold;
+        margin: .5rem 0;
+    }
+
+    h5 {
+        font: normal normal bold 1rem/18px TimesBold;
+
+        &.mb-4 {
+            margin-bottom: 1.8rem !important;
+        }
+
+        @include mobile {
+            font: normal normal bold 0.875rem/18px TimesBold;
+
+            &.txtBt {
+                margin-bottom: 1.59rem;
+            }
+        }
+    }
+
+    h6 {
+        font: normal normal bold 1rem/19px InterstateBold;
+    }
+
+    p {
+        font: normal normal bold 0.75rem/18px InterstateLight;
+
+        @include mobile {
+            font: normal normal bold 0.625rem/18px InterstateLight;
+        }
+    }
+
+    a {
+        @include btnBuy(auto, auto, $black, $white);
+        padding: .4rem 3rem;
+
+        @include mobile {
+            padding: .4rem 1rem;
+        }
+    }
+
     &:hover {
         background-size: contain;
         background-position: top;
@@ -162,4 +204,16 @@ button:not(:disabled),
             background: $golden;
         }
     }
-}*/
+}
+
+.glider-prev,
+.glider-next {
+    border: 1px solid $black;
+    padding: 1rem;
+    border-radius: 50%;
+
+    @include mobile {
+        display: none;
+    }
+
+}
