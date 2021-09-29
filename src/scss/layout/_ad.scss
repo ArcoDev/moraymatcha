@@ -7,9 +7,8 @@
     position: fixed;
     z-index: 6;
     p {
+        font: normal normal normal 0.625rem/12px InterstateBold;
         color: $white;
-        font-size: 0.625rem;
-        font-family: "InterstateBold";
         margin-bottom: 0;
     }
 }

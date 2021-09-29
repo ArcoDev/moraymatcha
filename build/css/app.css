@@ -236,9 +236,8 @@ button:not(:disabled),
   z-index: 6;
 }
 .ad p {
+  font: normal normal normal 0.625rem/12px InterstateBold;
   color: #ffffff;
-  font-size: 0.625rem;
-  font-family: "InterstateBold";
   margin-bottom: 0;
 }
 
@@ -275,10 +274,8 @@ button:not(:disabled),
   margin: 0.5rem 18rem 0 0;
 }
 .items a {
-  font-size: 0.875rem;
+  font: normal normal 500 0.875rem/16.1px TimesBold;
   color: #000000;
-  font-weight: 500;
-  line-height: 16.1px;
   transition: 0.3s ease-in-out;
 }
 .items a:hover {
@@ -340,7 +337,6 @@ button:not(:disabled),
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
   padding: 3rem 0 3.5rem 0;
-  font-family: "TimesBold";
 }
 @media screen and (max-width: 767px) {
   .shop {
@@ -348,9 +344,7 @@ button:not(:disabled),
   }
 }
 .shop h2 {
-  font-size: 1.78rem;
-  font-weight: 700;
-  line-height: 32.2px;
+  font: normal normal 700 1.78rem/32.2px TimesBold;
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 767px) {
@@ -447,12 +441,9 @@ button:not(:disabled),
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
-  font-family: "TimesBold";
 }
 .recommended h2 {
-  font-size: 1.78rem;
-  font-weight: 700;
-  line-height: 32.2px;
+  font: normal normal 700 1.78rem/32.2px TimesBold;
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 767px) {
@@ -503,18 +494,13 @@ button:not(:disabled),
 }
 .banner h3 {
   width: 735px;
-  font-size: 2.5rem;
-  font-family: "TimesBold";
-  font-weight: bold;
-  line-height: 46px;
+  font: normal normal bold 2.5rem/46px TimesBold;
   margin: 2.25rem 0;
 }
 @media screen and (max-width: 767px) {
   .banner h3 {
     width: 302px;
-    line-height: 27.6px;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font: normal normal 700 1.5rem/27.6px TimesBold;
     margin: 0;
   }
 }
@@ -526,6 +512,11 @@ button:not(:disabled),
   border-radius: 4px;
   padding: 0.5rem 0 0 0;
   font-weight: bold;
+  transition: 0.3s ease-out;
+}
+.banner a:hover {
+  color: #ffffff !important;
+  background: #C59D5D;
 }
 @media screen and (max-width: 767px) {
   .banner a {
@@ -550,9 +541,7 @@ button:not(:disabled),
   }
 }
 .sold h2 {
-  font-size: 1.78rem;
-  font-weight: 700;
-  line-height: 32.2px;
+  font: normal normal 700 1.78rem/32.2px TimesBold;
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 767px) {
@@ -680,6 +669,11 @@ button:not(:disabled),
 }
 .banner2 a {
   margin: -2.5rem 0 0 0;
+  transition: 0.3s ease-out;
+}
+.banner2 a:hover {
+  color: #ffffff !important;
+  background: #C59D5D;
 }
 @media screen and (max-width: 767px) {
   .banner2 a {
@@ -706,9 +700,7 @@ button:not(:disabled),
   place-items: center;
 }
 .benefits h2 {
-  font-size: 1.78rem;
-  font-weight: 700;
-  line-height: 32.2px;
+  font: normal normal 700 1.78rem/32.2px TimesBold;
   margin-bottom: 2rem;
   margin: 1rem 0 3.5rem 0;
 }

@@ -30,10 +30,8 @@
     margin: .5rem 18rem 0 0;
 
     a {
-        font-size: 0.875rem;
+        font: normal normal 500 0.875rem/16.1px TimesBold;
         color: $black;
-        font-weight: 500;
-        line-height: 16.1px;
         transition: .3s ease-in-out;
 
         &:hover {

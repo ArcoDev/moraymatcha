@@ -38,17 +38,12 @@
 
     h3 {
         width: 735px;
-        font-size: 2.5rem;
-        font-family: 'TimesBold';
-        font-weight: bold;
-        line-height: 46px;
+        font: normal normal bold 2.5rem/46px TimesBold;
         margin: 2.25rem 0;
 
         @include mobile {
             width: 302px;
-            line-height: 27.6px;
-            font-size: 1.5rem;
-            font-weight: 700;
+            font: normal normal 700 1.5rem/27.6px TimesBold;
             margin: 0
         }
     }
@@ -56,6 +51,12 @@
     a {
         @include btnBuy(248px, 40px, $white, $black);
         font-weight: bold;
+        transition: .3s ease-out;
+
+        &:hover {
+            color: $white !important;
+            background: $golden;
+        }
 
         @include mobile {
             @include btnBuy(200px, 40px, $white, $black);

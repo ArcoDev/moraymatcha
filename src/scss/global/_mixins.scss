@@ -19,9 +19,7 @@
 
 //Encabezado de cada seccion 
 @mixin titleH2 {
-    font-size: 1.78rem;
-    font-weight: 700;
-    line-height: 32.2px;
+    font: normal normal 700 1.78rem/32.2px TimesBold;
     margin-bottom: 2rem;
     @include mobile {
         font-size: 1.25rem;
