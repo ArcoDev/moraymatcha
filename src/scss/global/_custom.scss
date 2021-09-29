@@ -30,7 +30,6 @@ body {
     padding: 0;
     font-size: 16px;
     font-family: "InterstateLight";
-    overflow-x: hidden;
 }
 
 //Custom carousel
@@ -148,14 +147,19 @@ button:not(:disabled),
     }
 }
 
+
+/*Esilos del glider js
 .box-glider {
     padding: 1rem;
-    transition: 1s ease-out;
-
+    transition: all 1s ease-out;
     &:hover {
         background-size: contain;
         background-position: top;
         background-repeat: no-repeat;
         background-image: url('../img/circle.svg');
+
+        a {
+            background: $golden;
+        }
     }
-}
+}*/
