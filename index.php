@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+    require 'language-options.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +12,7 @@
     <meta property="og:locale" content="es_mx">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nuestros vinos están elaborados para encantar, inspirar y compartir.">
-    <meta property="og:description" content="Test para postulacion para vacabte de desarrollo web.">
+    <meta property="og:description" content="Test para postulacion para vacante de desarrollo web.">
     <meta property="og:url" content="http://test250921.bombilladigital.com/">
     <meta property="og:site_name" content="Vinimos">
     <title>VINIMOS</title>
@@ -26,20 +30,20 @@
 <body>
     <!-- AD -->
     <section class="ad">
-        <p>ENVÍOS SIN CARGO A CDMX | HASTA 12 CUOTAS SIN INTERÉS</p>
+        <p><?= $ad ?></p>
     </section>
     <!--End AD-->
     <!--Navegation-->
     <nav class="navegation">
         <div class="box">
-            <a href="index.html" rel="noopener">
+            <a href="index.php" rel="noopener">
                 <div class="logo"></div>
             </a>
             <ul class="items">
-                <li><a href="#" rel="noopener">Vinos</a></li>
-                <li><a href="#" rel="noopener">Líneas</a></li>
-                <li><a href="#" rel="noopener">Nosotros</a></li>
-                <li><a href="http://" rel="noopener">Contacto</a></li>
+                <li><a href="#" rel="noopener"><?= $wines ?></a></li>
+                <li><a href="#" rel="noopener"><?= $line ?></a></li>
+                <li><a href="#" rel="noopener"><?= $us ?></a></li>
+                <li><a href="#" rel="noopener"><?= $contact ?></a></li>
             </ul>
         </div>
         <div class="box">
@@ -50,10 +54,16 @@
             <div class="icons">
                 <span class="user"></span>
                 <span class="cart"></span>
-                <select name="" id="">
-                    <option value="es">Esp</option>
-                    <option value="en">Eng</option>
-                </select>
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <?= $language ?>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="./detect-language.php?language=es">ESP</a></li>
+                        <li><a class="dropdown-item" href="./detect-language.php?language=en">ENG</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -69,9 +79,9 @@
     <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="box-text">
-                <h1>En estas fiestas brinda con nosotros</h1>
+                <h1><?= $title ?></h1>
                 <a href="#" rel="noopener ">
-                    <button class="btn btn-buy">Comprar</button>
+                    <button class="btn btn-buy"><?= $btnComprar ?></button>
                 </a>
             </div>
             <div class="carousel-item active">
@@ -99,27 +109,27 @@
 
     <!--Shop Vinos-->
     <section class="shop">
-        <h2>¿Que estás buscando?</h2>
+        <h2><?= $titleShop ?></h2>
         <div class="container-wines">
             <div class="box-wines tintos">
-                <p>Tintos</p>
+                <p><?= $reds ?></p>
             </div>
             <div class="box-wines blancos">
-                <p>Blancos</p>
+                <p><?= $whites ?></p>
             </div>
             <div class="box-wines espuma">
-                <p>Espumantes</p>
+                <p><?= $foaming ?></p>
             </div>
             <div class="box-wines especiales">
-                <p>Especiales</p>
+                <p><?= $specials ?></p>
             </div>
         </div>
     </section>
-    <!--End Carousel-->
+    <!--End Shop-->
 
     <!-- Recommended -->
     <section class="recommended">
-        <h2>Recomendados</h2>
+        <h2><?= $titleRecommended ?></h2>
     </section>
     <div class="container mb-5">
         <div class="row">
@@ -188,15 +198,15 @@
 
     <!-- Banner1 -->
     <section class="banner">
-        <p>EXPERIENCIA SAN PABLO</p>
-        <h3>Nuestros vinos están elaborados para encantar, inspirar y compartir.</h3>
-        <a href="#" rel="noopener">Explorar vinos</a>
+        <p><?= $titleBanner1 ?></p>
+        <h3><?= $subBanner1 ?></h3>
+        <a href="#" rel="noopener"><?= $btnBanner1 ?></a>
     </section>
     <!--End Banner1-->
 
     <!-- Sold vinos -->
     <section class="sold">
-        <h2>Los más vendidos</h2>
+        <h2><?= $titleSold ?></h2>
         <div class="container-sold">
             <div class="box-sold">
                 <img lazy="loading" src="build/img/malbel.png" alt="malbel">
@@ -235,32 +245,32 @@
 
     <!-- Banner 2 -->
     <section class="banner2 banner">
-        <h3>Exclusivos tienda online</h3>
-        <a href="#" rel="noopener">Explorar vinos</a>
+        <h3><?= $titleBanner2 ?></h3>
+        <a href="#" rel="noopener"><?= $btnBanner2 ?></a>
     </section>
     <!-- End Banner 2 -->
 
     <!-- Benefits -->
     <section class="benefits">
-        <h2>Beneficios de comprar online</h2>
+        <h2><?= $titleBenefit ?></h2>
         <div class="container-benefits">
             <div class="box-benefits">
                 <img src="build/img/envio.svg" alt="Icon de envios">
-                <p class="one">Envío gratis a todo el país</p>
+                <p class="one"><?= $send ?></p>
             </div>
             <div class="box-benefits">
                 <img src="build/img/tarjeta.svg" alt="Icon de tarjetas">
-                <p class="two">Cuotas sin interés con bancos adheridos</p>
+                <p class="two"><?= $share ?></p>
             </div>
             <div class="box-benefits">
                 <img src="build/img/tiempos.svg" alt="Icon de tiempos">
                 <p>
-                    <a href="#" rel="noopener">Ver tiempos de envío</a>
+                    <a href="#" rel="noopener"><?= $titleBenefit ?></a>
                 </p>
             </div>
             <div class="box-benefits">
                 <img src="build/img/asistencia.svg" alt="Icon de asistencia">
-                <p>Asistencia online</p>
+                <p><?= $attendance ?></p>
             </div>
         </div>
     </section>
@@ -271,10 +281,9 @@
         <div class="box-news">
             <div class="mail">
                 <img src="build/img/mail.svg" alt="Icon de mail">
-                <h3>Recibe las mejores propuestas en tu mail</h3>
+                <h3><?= $titleNews ?></h3>
             </div>
-            <p>Subscribite a nuestro newsletter para enterarte primero de los nuevos lanzamientos, promociones y
-                más.</p>
+            <p><?= $subscribe ?></p>
         </div>
         <div class="box-news">
             <div class="box-form">
@@ -283,7 +292,7 @@
                         <label for="email">Email</label><br>
                         <input type="email" name="email" placeholder="Ingresar correo electrónico">
                     </div>
-                    <button type="submit">Subscribirme</button>
+                    <button type="submit"><?= $btnSubs ?></button>
                 </form>
             </div>
         </div>
@@ -292,9 +301,9 @@
 
     <!-- Cancel -->
     <section class="cancel">
-        <h3>¿CAMBIASTE DE OPINIÓN?</h3>
-        <p>Podés anular tus compras dentro de un plazo máximo de 10 días desde la fecha que realizaste la compra.</p>
-        <a href="#" rel="noopener">Quiero cancelar mi compra</a>
+        <h3><?= $titleCancel ?></h3>
+        <p><?= $descCancel ?></p>
+        <a href="#" rel="noopener"><?= $btnCancel ?></a>
     </section>
     <!-- End Cancel -->
 
@@ -313,14 +322,14 @@
             </div>
             <div class="col-12 col-md-6 d-flex p-0">
                 <div class="col">
-                    <h4 class="mb-4">Productos</h4>
+                    <h4 class="mb-4"><?= $products ?></h4>
                     <p>Tintos</p>
                     <p>Blancos</p>
                     <p>Espumantes</p>
                     <p>Otros</p>
                 </div>
                 <div class="col">
-                    <h4 class="mb-4">Líneas</h4>
+                    <h4 class="mb-4"><?= $line ?></h4>
                     <p>San Pablo</p>
                     <p>San Pablo Gala</p>
                     <p>San Pablo Fina Los Nobles</p>
@@ -330,13 +339,13 @@
                     <p>#MovistarArena</p>
                 </div>
                 <div class="col">
-                    <h4 class="mb-4">Recursos</h4>
-                    <p>Preguntas Frecuentes</p>
-                    <p>Términos y condiciones</p>
-                    <p>Privacidad</p>
+                    <h4 class="mb-4"><?= $sinews ?></h4>
+                    <p><?= $questions ?></p>
+                    <p><?= $terms ?></p>
+                    <p><?= $privacy ?></p>
                 </div>
                 <div class="col">
-                    <h4>Institucional</h4>
+                    <h4><?= $institutional ?></h4>
                 </div>
             </div>
             <div class="col-12 col-md-2 p-0">
@@ -350,8 +359,7 @@
             <div class="col-12 copyright text-center">
                 <hr>
                 <img class="my-4 qr-mov" lazy="loading" src="build/img/qr.png" alt="Qr Vinimos">
-                <p>© Vinimos San Pablo 2021 - Todos los derechos reservados | Beber con moderación. Prohibida su venta a
-                    menores de 18 años. No compartir contenido con menores de 18 años.</p>
+                <p><?= $copyright ?></p>
             </div>
         </div>
     </footer>
