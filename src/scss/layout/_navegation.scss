@@ -1,3 +1,37 @@
+//Custom menu
+.menu {
+    background: $white;
+    position: fixed;
+    top: 12%;
+    z-index: 6;
+    transition: .4s ease-out;
+
+    @include mobile {
+        display: none;
+    }
+
+    h2 {
+        font: normal normal 300 0.75rem/12px InterstateLight;
+    }
+
+    h3 {
+        font: normal normal 400 1.25rem/23px TimesBold;
+        text-decoration: underline !important;
+        margin-bottom: 1rem;
+
+        &:hover {
+            color: $golden;
+        }
+    }
+
+    p,
+    .mas {
+        font: normal normal 600 0.875rem/14px InterstateLight;
+        margin-bottom: 2rem;
+        color: $black;
+    }
+}
+
 .navegation {
     width: 100%;
     height: 70px;
@@ -7,6 +41,23 @@
     z-index: 5;
     top: 3%;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+
+    @include mobile {
+        @include grid(3);
+        height: 95px;
+    }
+}
+
+.hamburger {
+    display: none;
+
+    @include mobile {
+        display: block;
+        display: block;
+        position: relative;
+        top: -18px;
+        left: 10px;
+    }
 }
 
 .box {
@@ -22,12 +73,23 @@
     background-position: center;
     background-size: cover;
     margin: 0 12rem 0 2.3rem;
+
+    @include mobile {
+        margin: 0;
+        position: relative;
+        top: -16px;
+        left: 98px;
+    }
 }
 
 .items {
     display: flex;
     gap: 1.5rem;
     margin: .5rem 18rem 0 0;
+
+    @include mobile {
+        display: none;
+    }
 
     a {
         font: normal normal 500 0.875rem/16.1px TimesBold;
@@ -48,6 +110,17 @@
         border-left: none;
         border-right: none;
         padding: .3rem 1.3rem;
+        @include mobile {
+            border: 1px solid #F0F0F0;
+            background: #F6F6F6;
+            border-radius: 4px;
+        }
+    }
+
+    @include mobile {
+        position: relative;
+        top: 21px;
+        left: -19%;
     }
 }
 
@@ -57,6 +130,11 @@
     position: absolute;
     margin-left: -3px;
     background-image: url('../img/search.svg');
+
+    @include mobile {
+        margin-left: 147px;
+        margin-top: 40px;
+    }
 }
 
 .icons {
@@ -73,11 +151,21 @@
     .user {
         @include sizeIcons;
         background-image: url('../img/user.svg');
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .cart {
         @include sizeIcons;
         background-image: url('../img/cart.svg');
+
+        @include mobile {
+            position: relative;
+            right: 85%;
+            top: -16px;
+        }
     }
 
     select {

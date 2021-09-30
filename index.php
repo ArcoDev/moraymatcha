@@ -36,14 +36,17 @@
     <!--Navegation-->
     <nav class="navegation">
         <div class="box">
+            <a href="" class="hamburger">
+                <img src="build/img/hamburger.svg" alt="Icon menu">
+            </a>
             <a href="index.php" rel="noopener">
                 <div class="logo"></div>
             </a>
             <ul class="items">
-                <li><a href="#" rel="noopener"><?= $wines ?></a></li>
-                <li><a href="#" rel="noopener"><?= $line ?></a></li>
-                <li><a href="#" rel="noopener"><?= $us ?></a></li>
-                <li><a href="#" rel="noopener"><?= $contact ?></a></li>
+                <li><a href="" onmouseover="showWine()" onmouseout="noneWine()" rel="noopener"><?= $wines ?></a></li>
+                <li><a href="" onmouseover="showLine()" onmouseout="noneLine()" rel="noopener"><?= $line ?></a></li>
+                <li><a href="" rel="noopener"><?= $us ?></a></li>
+                <li><a href=""w rel="noopener"><?= $contact ?></a></li>
             </ul>
         </div>
         <div class="box">
@@ -106,6 +109,88 @@
         </button>
     </section>
     <!--End Carousel-->
+
+    <!--Menu-->
+    <div class="container-fluid menu">
+        <div class="row wine d-none">
+            <div class="col-12 col-md-3 px-3 py-5 text-center">
+                <h2>DESTACADOS DEL MES</h2>
+                <div class="text-center box-glider">
+                    <img src="build/img/mov-malbelc.png" alt="Botella Malbec">
+                    <h4>SAN PABLO</h4>
+                    <h5>Malbelc Terrior Los Miradores</h5>
+                    <h6 class="mb-5">$5.937</h6>
+                    <a href="#" rel="noopener">Comprar</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="row">
+                    <div class="col-12 col-md-2 p-3 m-3">
+                        <h3>Tintos</h3>
+                        <p>Malbec</p>
+                        <p>Cabernet Sauvingon</p>
+                        <p>Cabernet Bouchet</p>
+                        <p>Cabernet Fran</p>
+                        <p>Blend</p>
+                        <a class="mas" href="#" rel="noopener">Ver más</a>
+                    </div>
+                    <div class="col-12 col-md-2 p-3 m-3">
+                        <h3>Blancos</h3>
+                        <p>Chardonay</p>
+                        <p>Sauvingon Blanc</p>
+                        <p>Torrentes</p>
+                        <p>Riesling</p>
+                        <p>Blend</p>
+                        <a class="mas" href="#" rel="noopener">Ver más</a>
+                    </div>
+                    <div class="col-12 col-md-2 p-3 m-3">
+                        <h3>Espumantes</h3>
+                        <p>Brut Nature</p>
+                        <p>Extra But</p>
+                    </div>
+                    <div class="col-12 col-md-2 p-3 m-3">
+                        <h3>Especiales</h3>
+                        <p>Rose</p>
+                        <p>Gewurztraminer</p>
+                    </div>
+                    <div class="col-12 col-md-2 p-3 m-3">
+                        <h3>Ocaciones</h3>
+                        <p>Celebrar</p>
+                        <p>Regalar</p>
+                        <p>Descubrir</p>
+                        <p>Para todos los días</p>
+                        <p>Por estacionalidad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-5 line d-none">
+            <div class="col-12 col-md-3">
+                <h3>San Pablo</h3>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img src="build/img/sanPablo.png" alt="Botella San Pablo">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p>Icono</p>
+                        <p>Finca Los Nobles</p>
+                        <p>De Sangre</p>
+                        <p>Insignia</p>
+                        <p>Espumantes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <h3>La linda</h3>
+                <img src="build/img/linda.png" alt="Botella La Linda">
+            </div>
+            <div class="col-12 col-md-3">
+                <h3>Essencia San Pablo</h3>
+                <img src="build/img/escencia.png" alt="Botella Essencia San Pablo">
+            </div>
+        </div>
+    </div>
+    <!--EndMenu-->
 
     <!--Shop Vinos-->
     <section class="shop">
