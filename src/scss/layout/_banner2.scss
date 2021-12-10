@@ -27,8 +27,8 @@
         margin: -2.5rem 0 0 0;
         transition: .3s ease-out;
         &:hover {
-            color: $white!important;
-            background: $golden;
+            color: $secondary!important;
+            background: $tertiary;
         }
 
         @include mobile {

@@ -57,7 +57,7 @@ body {
   margin: 1rem 0;
 }
 .box-text .btn-buy:hover {
-  background: #C59D5D;
+  background: #2E4121;
   color: #ffffff;
   cursor: pointer;
   transform: scale(1.03);
@@ -129,6 +129,11 @@ button:not(:disabled),
     left: 40%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .carousel-control-prev-icon {
+    left: 35%;
+  }
+}
 
 .carousel-control-next-icon {
   padding: 1rem;
@@ -149,9 +154,9 @@ button:not(:disabled),
     left: -12rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .carousel-control-next-icon {
-    left: -47rem;
+    left: -33rem;
   }
 }
 
@@ -209,7 +214,7 @@ button:not(:disabled),
   background-image: url("../img/circle.svg");
 }
 .box-glider:hover a {
-  background: #C59D5D;
+  background: #2E4121;
 }
 
 .glider-prev,
@@ -262,7 +267,7 @@ button:not(:disabled),
   margin-bottom: 1rem;
 }
 .menu h3:hover {
-  color: #C59D5D;
+  color: #2E4121;
 }
 .menu p,
 .menu .mas {
@@ -289,6 +294,11 @@ button:not(:disabled),
     height: 95px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .navegation {
+    display: none;
+  }
+}
 
 .hamburger {
   display: none;
@@ -309,8 +319,8 @@ button:not(:disabled),
 }
 
 .logo {
-  width: 115px;
-  height: 30.81px;
+  width: 120px;
+  height: 37px;
   background-image: url("../img/logo.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -342,7 +352,7 @@ button:not(:disabled),
   transition: 0.3s ease-in-out;
 }
 .items a:hover {
-  color: #C59D5D;
+  color: #2E4121;
 }
 
 .search input {
@@ -460,10 +470,11 @@ button:not(:disabled),
     flex-direction: column;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .container-wines {
     width: 90%;
     flex-wrap: wrap;
+    gap: 0.5rem;
   }
 }
 .container-wines .box-wines {
@@ -482,6 +493,11 @@ button:not(:disabled),
     width: 328px;
     height: 70px;
     margin-bottom: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .container-wines .box-wines {
+    width: 49%;
   }
 }
 .container-wines .box-wines.tintos {
@@ -510,9 +526,9 @@ button:not(:disabled),
     height: 70px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .container-wines .box-wines::before {
-    width: 40%;
+    width: 44%;
   }
 }
 .container-wines .box-wines:hover {
@@ -611,7 +627,7 @@ button:not(:disabled),
 }
 .banner a:hover {
   color: #ffffff !important;
-  background: #C59D5D;
+  background: #2E4121;
 }
 @media screen and (max-width: 767px) {
   .banner a {
@@ -668,7 +684,7 @@ button:not(:disabled),
     width: 50%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .container-sold .box-sold {
     width: 50%;
     margin: 2rem 0;
@@ -723,7 +739,7 @@ button:not(:disabled),
   }
 }
 .container-sold .box-sold:hover {
-  background: #c59d5d31;
+  background: #C7E0BB;
 }
 .container-sold .box-sold:hover img {
   transform: translateY(-55px);
@@ -734,7 +750,7 @@ button:not(:disabled),
   }
 }
 .container-sold .box-sold:hover a {
-  background: #C59D5D;
+  background: #2E4121;
 }
 
 .banner2 {
@@ -768,7 +784,7 @@ button:not(:disabled),
 }
 .banner2 a:hover {
   color: #ffffff !important;
-  background: #C59D5D;
+  background: #2E4121;
 }
 @media screen and (max-width: 767px) {
   .banner2 a {
@@ -856,7 +872,7 @@ button:not(:disabled),
   transition: 0.3s ease-out;
 }
 .benefits .container-benefits a:hover {
-  color: #C59D5D;
+  color: #2E4121;
 }
 
 .newsletter {
@@ -865,7 +881,7 @@ button:not(:disabled),
   place-items: center;
   margin: 5rem 0;
   padding: 2rem 8rem;
-  background: #C59D5D;
+  background: #C7E0BB;
 }
 @media screen and (max-width: 767px) {
   .newsletter {
@@ -875,7 +891,7 @@ button:not(:disabled),
     margin: 3rem 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .newsletter {
     padding: 2rem;
   }
@@ -923,7 +939,7 @@ button:not(:disabled),
 }
 .box-news .box-form form input {
   width: 336px;
-  background: #C59D5D;
+  background: #C7E0BB;
   border: none;
   border-bottom: 1px solid #000000;
   outline: none;
@@ -966,6 +982,11 @@ button:not(:disabled),
   background-repeat: no-repeat;
   background-image: url("../img/copa.svg");
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .cancel {
+    margin-top: 4rem;
+  }
+}
 .cancel h3 {
   font: normal normal 700 0.75rem/12px InterstateLight;
   letter-spacing: 0.4em;
@@ -976,7 +997,7 @@ button:not(:disabled),
   margin: 2rem 0 0 6.5rem;
   width: 3%;
   height: 2px;
-  background: #C59D5D;
+  background: #2E4121;
 }
 @media screen and (max-width: 767px) {
   .cancel h3::before {
@@ -1000,11 +1021,11 @@ button:not(:disabled),
   transition: 0.3s ease-out;
 }
 .cancel a:hover {
-  color: #C59D5D;
+  color: #2E4121;
 }
 
 .footer {
-  background: #000000;
+  background: #2E4121;
   padding: 3rem 0 0.5rem 0;
 }
 .footer .row {
@@ -1056,14 +1077,14 @@ button:not(:disabled),
   transition: 0.3s ease-out;
 }
 .footer .row p:hover {
-  color: #C59D5D;
+  color: #C7E0BB;
 }
 .footer .row p a {
   color: #ffffff;
   transition: 0.3s ease-out;
 }
 .footer .row p a:hover {
-  color: #C59D5D;
+  color: #C7E0BB;
 }
 .footer .row h4 {
   font: normal normal 400 1rem/13.34px InterstateLight;

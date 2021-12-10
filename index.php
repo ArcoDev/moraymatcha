@@ -397,10 +397,9 @@
         <div class="row px-3">
             <div class="col-12 col-md-4">
                 <img src="build/img/logoGolden.svg" alt="Icon Vinimos">
-                <h3>Bodega San Pablo</h3>
+                <h3>Bodega Luigi Bosca</h3>
                 <p class="w-50">
-                    <a href="https://n9.cl/sanpablo" rel="noopener">Zaragoza 14, San Pablo Pejo, Guanajuato, 77600,
-                        México</a>
+                    <a href="https://n9.cl/sanpablo" rel="noopener">San Martin 2044, Lújan de Cuto, Mendoza, M5507EUP, Argentina</a>
                 </p>
                 <img class="my-4 qr-desk" lazy="loading" src="build/img/qr.png" alt="Qr Vinimos">
                 <hr class="mov-line">

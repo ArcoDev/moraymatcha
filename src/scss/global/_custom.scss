@@ -47,7 +47,7 @@ body {
     }
 
     h1 {
-        color: $white !important;
+        color: $secondary !important;
         font-family: $fontPlay;
         font-weight: 400;
     }
@@ -55,8 +55,8 @@ body {
     .btn-buy {
         width: 248px;
         height: 40px;
-        background: $white;
-        color: $black;
+        background: $secondary;
+        color: $primary;
         font-family: "InterstateLight";
         font-weight: 700;
         line-height: 16.7px;
@@ -64,8 +64,8 @@ body {
         margin: 1rem 0;
 
         &:hover {
-            background: $golden;
-            color: $white;
+            background: $tertiary;
+            color: $secondary;
             cursor: pointer;
             transform: scale(1.03);
         }
@@ -131,6 +131,10 @@ button:not(:disabled),
     @include mobile {
         left: 40%;
     }
+
+    @include tablet {
+        left: 35%;
+    }
 }
 
 .carousel-control-next-icon {
@@ -143,7 +147,7 @@ button:not(:disabled),
     }
 
     @include tablet {
-        left: -47rem;
+        left: -33rem;
     }
 }
 
@@ -187,7 +191,7 @@ button:not(:disabled),
     }
 
     a {
-        @include btnBuy(auto, auto, $black, $white);
+        @include btnBuy(auto, auto, $primary, $secondary);
         padding: .4rem 3rem;
 
         @include mobile {
@@ -202,14 +206,14 @@ button:not(:disabled),
         background-image: url('../img/circle.svg');
 
         a {
-            background: $golden;
+            background: $tertiary;
         }
     }
 }
 
 .glider-prev,
 .glider-next {
-    border: 1px solid $black;
+    border: 1px solid $primary;
     padding: 1rem;
     border-radius: 50%;
 

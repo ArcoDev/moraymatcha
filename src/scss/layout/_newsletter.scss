@@ -3,7 +3,7 @@
     place-items: center;
     margin: 5rem 0;
     padding: 2rem 8rem;
-    background: $golden;
+    background: $tertiary_hover;
 
     @include mobile {
         @include grid(1);
@@ -59,21 +59,21 @@
 
         input {
             width: 336px;
-            background: $golden;
+            background: $tertiary_hover;
             border: none;
-            border-bottom: 1px solid $black;
+            border-bottom: 1px solid $primary;
             outline: none;
             @include mobile {
                 width: 333px;
             }
             &::placeholder {
-                color: $black;
+                color: $primary;
 
             }
         }
 
         button {
-            @include btnBuy(128px, 48px, $black, $white);
+            @include btnBuy(128px, 48px, $primary, $secondary);
             border: none;
             padding: 0;
             margin: .3rem 0 0 .5rem;

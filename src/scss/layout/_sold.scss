@@ -74,7 +74,7 @@
         }
 
         a {
-            @include btnBuy(auto, auto, $black, $white);
+            @include btnBuy(auto, auto, $primary, $secondary);
             padding: .4rem 7rem;
 
             @include mobile {
@@ -83,7 +83,7 @@
         }
 
         &:hover {
-            background: #c59d5d31;
+            background: $tertiary_hover;
 
             img {
                 transform: translateY(-55px);
@@ -95,7 +95,7 @@
             }
 
             a {
-                background: $golden;
+                background: $tertiary;
             }
         }
     }

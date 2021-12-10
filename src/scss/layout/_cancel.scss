@@ -8,6 +8,10 @@
     background-repeat: no-repeat;
     background-image: url('../img/copa.svg');
 
+    @include tablet {
+        margin-top: 4rem;
+    }
+
     h3 {
         font: normal normal 700 0.75rem/12px InterstateLight;
         letter-spacing: 0.4em;
@@ -18,7 +22,7 @@
             margin: 2rem 0 0 6.5rem;
             width: 3%;
             height: 2px;
-            background: $golden;
+            background: $tertiary;
 
             @include mobile {
                 width: 14%;
@@ -35,12 +39,12 @@
         }
     }
     a {
-        color: $black;
+        color: $primary;
         text-decoration: underline!important;
         font: normal normal 700 0.75rem/12px InterstateLight;
         transition: .3s ease-out;
         &:hover {
-            color: $golden;
+            color: $tertiary;
         }
     }
 }

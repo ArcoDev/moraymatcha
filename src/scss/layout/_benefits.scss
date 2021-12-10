@@ -36,7 +36,7 @@
         @mixin fontBenefits {
             margin: 1rem auto;
             font: normal normal bold 0.75rem/14px TimesBold;
-            color: $black;
+            color: $primary;
         }
 
         img {
@@ -62,7 +62,7 @@
             transition: .3s ease-out;
 
             &:hover {
-                color: $golden;
+                color: $tertiary;
             }
         }
 

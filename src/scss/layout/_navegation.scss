@@ -1,6 +1,6 @@
 //Custom menu
 .menu {
-    background: $white;
+    background: $secondary;
     position: fixed;
     top: 12%;
     z-index: 6;
@@ -9,6 +9,7 @@
     @include mobile {
         display: none;
     }
+    
 
     h2 {
         font: normal normal 300 0.75rem/12px InterstateLight;
@@ -20,7 +21,7 @@
         margin-bottom: 1rem;
 
         &:hover {
-            color: $golden;
+            color: $tertiary;
         }
     }
 
@@ -28,14 +29,14 @@
     .mas {
         font: normal normal 600 0.875rem/14px InterstateLight;
         margin-bottom: 2rem;
-        color: $black;
+        color: $primary;
     }
 }
 
 .navegation {
     width: 100%;
     height: 70px;
-    background: $white;
+    background: $secondary;
     @include grid(2);
     position: fixed;
     z-index: 5;
@@ -45,6 +46,10 @@
     @include mobile {
         @include grid(3);
         height: 95px;
+    }
+
+    @include tablet {
+        display: none;
     }
 }
 
@@ -66,8 +71,8 @@
 }
 
 .logo {
-    width: 115px;
-    height: 30.81px;
+    width: 120px;
+    height: 37px;
     background-image: url('../img/logo.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -93,11 +98,11 @@
 
     a {
         font: normal normal 500 0.875rem/16.1px TimesBold;
-        color: $black;
+        color: $primary;
         transition: .3s ease-in-out;
 
         &:hover {
-            color: $golden;
+            color: $tertiary;
         }
     }
 }

@@ -1,9 +1,9 @@
 .footer {
-    background: $black;
+    background: $tertiary;
     padding: 3rem 0 .5rem 0;
 
     .row {
-        color: $white;
+        color: $secondary;
         
         .qr-mov {
             display: none;
@@ -56,15 +56,15 @@
             transition: .3s ease-out;
 
             &:hover {
-                color: $golden;
+                color: $tertiary_hover;
             }
 
             a {
-                color: $white;
+                color: $secondary;
                 transition: .3s ease-out;
 
                 &:hover {
-                    color: $golden;
+                    color: $tertiary_hover;
                 }
             }
         }

@@ -27,7 +27,7 @@
             margin: 2rem 0 0 6.5rem;
             width: 3%;
             height: 2px;
-            background: $white;
+            background: $secondary;
 
             @include mobile {
                 width: 14%;
@@ -49,17 +49,17 @@
     }
 
     a {
-        @include btnBuy(248px, 40px, $white, $black);
+        @include btnBuy(248px, 40px, $secondary, $primary);
         font-weight: bold;
         transition: .3s ease-out;
 
         &:hover {
-            color: $white !important;
-            background: $golden;
+            color: $secondary !important;
+            background: $tertiary;
         }
 
         @include mobile {
-            @include btnBuy(200px, 40px, $white, $black);
+            @include btnBuy(200px, 40px, $secondary, $primary);
 
         }
     }
