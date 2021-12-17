@@ -1,18 +1,10 @@
-const wine = document.querySelector('.wine');
-const line = document.querySelector('.line');
+const showGrid = document.getElementById('show-grid');
+const gridWine = document.getElementById('grid-wine');
 
-function showWine() {
-    wine.classList.remove('d-none');
-}
+showGrid.addEventListener('mouseover', () => {
+    gridWine.classList.add('grid-activo');
+})
 
-function noneWine() {
-    wine.classList.add('d-none');
-}
-
-function showLine() {
-    line.classList.remove('d-none');
-}
-
-function noneLine() {
-    line.classList.add('d-none');
-}
+gridWine.addEventListener('mouseleave', () => {
+    gridWine.classList.remove('grid-activo');
+})

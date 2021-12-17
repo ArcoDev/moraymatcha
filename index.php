@@ -15,7 +15,7 @@
     <meta property="og:description" content="Test para postulacion para vacante de desarrollo web.">
     <meta property="og:url" content="http://test250921.bombilladigital.com/">
     <meta property="og:site_name" content="Vinimos">
-    <title>VINIMOS</title>
+    <title>Luigi Bosca</title>
     <link rel="canonical" href="">
     <link rel="shortcut icon" href="build/img/favicon.svg" type="image/x-icon">
     <!-- CSS Personal -->
@@ -43,10 +43,71 @@
                 <div class="logo"></div>
             </a>
             <ul class="items">
-                <li><a href="" onmouseover="showWine()" onmouseout="noneWine()" rel="noopener"><?= $wines ?></a></li>
-                <li><a href="" onmouseover="showLine()" onmouseout="noneLine()" rel="noopener"><?= $line ?></a></li>
+                <!-- <li><a href="" onmouseover="showWine()" onmouseout="noneWine()" rel="noopener"><?= $wines ?></a></li> -->
+                <li id="show-grid" class="show-subnav">
+                    <a rel="noopener"><?= $wines ?></a>
+                </li>
+                <div id="grid-wine" class="container-grid">
+                    <div class="grid-featured">
+                        <h2>DESTACADOS DEL MES</h2>
+                        <div class="text-center box-glider">
+                            <img src="build/img/mov-malbelc.png" alt="Botella Malbec">
+                            <h4>LUIGI BOSCA</h4>
+                            <h5>Malbelc Terrior Los Miradores</h5>
+                            <h6 class="mb-5">$5.937</h6>
+                            <a href="#" rel="noopener">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="items-list">
+                        <a class="categoria">Tintos</a>
+                        <ul class="sub-categoria">
+                            <li><a href="#">Malbec</a></li>
+                            <li><a href="#">Cabernet Sauvignon</a></li>
+                            <li><a href="#">Cabernet Bouchet</a></li>
+                            <li><a href="#">Cabernet Franc</a></li>
+                            <li><a href="#">Blend</a></li>
+                        </ul>
+                    </div>
+                    <div class="items-list">
+                        <a class="categoria">Blancos</a>
+                        <ul class="sub-categoria">
+                            <li><a href="#">Chardonnay</a></li>
+                            <li><a href="#">Sauvingnon Blanc</a></li>
+                            <li><a href="#">Torrontes</a></li>
+                            <li><a href="#">Resing</a></li>
+                            <li><a href="#">Blend</a></li>
+                        </ul>
+                    </div>
+                    <div class="items-list">
+                        <a class="categoria">Espumantes</a>
+                        <ul class="sub-categoria">
+                            <li><a href="#">Brut Nature</a></li>
+                            <li><a href="#">Extra Brut</a></li>
+                        </ul>
+                    </div>
+                    <div class="items-list">
+                        <a class="categoria">Especiales</a>
+                        <ul class="sub-categoria">
+                            <li><a href="#">Rose</a></li>
+                            <li><a href="#">Gewurztraminer</a></li>
+                        </ul>
+                    </div>
+                    <div class="items-list">
+                        <a class="categoria">Ocaciones</a>
+                        <ul class="sub-categoria">
+                            <li><a href="#">Celebrar</a></li>
+                            <li><a href="#">Regalar</a></li>
+                            <li><a href="#">Descubrir</a></li>
+                            <li><a href="#">Para todos los días</a></li>
+                            <li><a href="#">Por estacionalidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <li><a href="" onmouseover="showLine()" onmouseout="noneLine()" rel="noopener"><?= $line ?></a></li> -->
+                <li><a href="" rel="noopener"><?= $line ?></a></li>
+
                 <li><a href="" rel="noopener"><?= $us ?></a></li>
-                <li><a href=""w rel="noopener"><?= $contact ?></a></li>
+                <li><a href="" w rel="noopener"><?= $contact ?></a></li>
             </ul>
         </div>
         <div class="box">
@@ -111,7 +172,7 @@
     <!--End Carousel-->
 
     <!--Menu-->
-    <div class="container-fluid menu">
+    <!-- <div class="container-fluid menu">
         <div class="row wine d-none">
             <div class="col-12 col-md-3 px-3 py-5 text-center">
                 <h2>DESTACADOS DEL MES</h2>
@@ -189,8 +250,7 @@
                 <img src="build/img/escencia.png" alt="Botella Essencia San Pablo">
             </div>
         </div>
-    </div>
-    <!--EndMenu-->
+    </div> -->
 
     <!--Shop Vinos-->
     <section class="shop">
@@ -399,7 +459,8 @@
                 <img src="build/img/logoGolden.svg" alt="Icon Vinimos">
                 <h3>Bodega Luigi Bosca</h3>
                 <p class="w-50">
-                    <a href="https://n9.cl/sanpablo" rel="noopener">San Martin 2044, Lújan de Cuto, Mendoza, M5507EUP, Argentina</a>
+                    <a href="https://n9.cl/sanpablo" rel="noopener">San Martin 2044, Lújan de Cuto, Mendoza, M5507EUP,
+                        Argentina</a>
                 </p>
                 <img class="my-4 qr-desk" lazy="loading" src="build/img/qr.png" alt="Qr Vinimos">
                 <hr class="mov-line">

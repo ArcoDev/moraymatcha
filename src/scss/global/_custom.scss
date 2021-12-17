@@ -14,6 +14,23 @@
     src: url('../font/Times.ttf');
 }
 
+@font-face {
+    font-family: "ChronicleBlack";
+    src: url('../font/Chronicle-Display-Black.otf');
+}
+@font-face {
+    font-family: "ChronicleLight";
+    src: url('../font/Chronicle-Display-Light.otf');
+}
+@font-face {
+    font-family: "ChronicleRoman";
+    src: url('../font/Chronicle-Display-Roman.otf');
+}
+@font-face {
+    font-family: "ChronicleSemiBold";
+    src: url('../font/Chronicle-Display-Semibold.otf');
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
 
@@ -36,7 +53,7 @@ body {
 .box-text {
     position: absolute;
     top: 50%;
-    z-index: 1;
+    z-index: 2;
     padding: 0 0 0 2.3rem;
     width: 35%;
 
@@ -50,6 +67,10 @@ body {
         color: $secondary !important;
         font-family: $fontPlay;
         font-weight: 400;
+
+        @include monitor {
+            width: 70%;
+        }
     }
 
     .btn-buy {
@@ -97,6 +118,10 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include monitor {
+        height: 700px;
+    }
 }
 
 .slider1 {
@@ -135,11 +160,16 @@ button:not(:disabled),
     @include tablet {
         left: 35%;
     }
+
+    @include monitor {
+        left: 14%;
+        bottom: 5rem;
+    }
 }
 
 .carousel-control-next-icon {
     @include controls;
-    left: -64rem;
+    left: -68rem;
     background-image: url('../img/arrowRight.svg') !important;
 
     @include mobile {
@@ -148,6 +178,11 @@ button:not(:disabled),
 
     @include tablet {
         left: -33rem;
+    }
+
+    @include monitor {
+        left: -94rem;
+        bottom: 5rem;
     }
 }
 
@@ -158,19 +193,20 @@ button:not(:disabled),
     padding: 1rem;
 
     h4 {
-        font: normal normal normal 0.75rem/12px InterstateBold;
+        font: normal normal normal 0.75rem/12px InterstateLight;
         margin: .5rem 0;
     }
 
     h5 {
-        font: normal normal bold 1rem/18px TimesBold;
-
+        font: normal normal bold 1rem/18px ChronicleBlack;
+         width: 150px;
+         margin: 0 auto;
         &.mb-4 {
             margin-bottom: 1.8rem !important;
         }
 
         @include mobile {
-            font: normal normal bold 0.875rem/18px TimesBold;
+            font: normal normal bold 0.875rem/18px ChronicleBlack;
 
             &.txtBt {
                 margin-bottom: 1.59rem;

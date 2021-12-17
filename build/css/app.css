@@ -12,6 +12,22 @@
   font-family: "TimesBold";
   src: url("../font/Times.ttf");
 }
+@font-face {
+  font-family: "ChronicleBlack";
+  src: url("../font/Chronicle-Display-Black.otf");
+}
+@font-face {
+  font-family: "ChronicleLight";
+  src: url("../font/Chronicle-Display-Light.otf");
+}
+@font-face {
+  font-family: "ChronicleRoman";
+  src: url("../font/Chronicle-Display-Roman.otf");
+}
+@font-face {
+  font-family: "ChronicleSemiBold";
+  src: url("../font/Chronicle-Display-Semibold.otf");
+}
 *,
 html {
   box-sizing: border-box;
@@ -29,7 +45,7 @@ body {
 .box-text {
   position: absolute;
   top: 50%;
-  z-index: 1;
+  z-index: 2;
   padding: 0 0 0 2.3rem;
   width: 35%;
 }
@@ -44,6 +60,11 @@ body {
   color: #ffffff !important;
   font-family: "Playfair Display", serif;
   font-weight: 400;
+}
+@media screen and (min-width: 1919px) {
+  .box-text h1 {
+    width: 70%;
+  }
 }
 .box-text .btn-buy {
   width: 248px;
@@ -84,6 +105,11 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 1919px) {
+  .slider {
+    height: 700px;
+  }
 }
 
 .slider1 {
@@ -134,6 +160,12 @@ button:not(:disabled),
     left: 35%;
   }
 }
+@media screen and (min-width: 1919px) {
+  .carousel-control-prev-icon {
+    left: 14%;
+    bottom: 5rem;
+  }
+}
 
 .carousel-control-next-icon {
   padding: 1rem;
@@ -141,7 +173,7 @@ button:not(:disabled),
   bottom: 4%;
   width: 4rem !important;
   cursor: pointer;
-  left: -64rem;
+  left: -68rem;
   background-image: url("../img/arrowRight.svg") !important;
 }
 @media screen and (max-width: 767px) {
@@ -159,24 +191,32 @@ button:not(:disabled),
     left: -33rem;
   }
 }
+@media screen and (min-width: 1919px) {
+  .carousel-control-next-icon {
+    left: -94rem;
+    bottom: 5rem;
+  }
+}
 
 /*Custom del glider js*/
 .box-glider {
   padding: 1rem;
 }
 .box-glider h4 {
-  font: normal normal normal 0.75rem/12px InterstateBold;
+  font: normal normal normal 0.75rem/12px InterstateLight;
   margin: 0.5rem 0;
 }
 .box-glider h5 {
-  font: normal normal bold 1rem/18px TimesBold;
+  font: normal normal bold 1rem/18px ChronicleBlack;
+  width: 150px;
+  margin: 0 auto;
 }
 .box-glider h5.mb-4 {
   margin-bottom: 1.8rem !important;
 }
 @media screen and (max-width: 767px) {
   .box-glider h5 {
-    font: normal normal bold 0.875rem/18px TimesBold;
+    font: normal normal bold 0.875rem/18px ChronicleBlack;
   }
   .box-glider h5.txtBt {
     margin-bottom: 1.59rem;
@@ -426,6 +466,51 @@ button:not(:disabled),
   border: none;
 }
 
+.container-grid {
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  left: 0;
+  background: #ffffff;
+  border-top: 1px solid #ccc;
+  display: none;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "featured featured items items items items";
+  z-index: 100 !important;
+  padding: 2rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 1s ease-out;
+}
+
+.grid-activo {
+  display: grid;
+}
+
+.grid-featured {
+  padding: 1rem 2rem 0 0;
+  text-align: center;
+}
+.grid-featured h2 {
+  font: normal normal 600 12px/12px "InterstateLight";
+}
+
+.items-list .categoria {
+  font: normal normal 400 20px/24px ChronicleSemiBold;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.items-list .categoria:hover {
+  color: #C7E0BB;
+  text-decoration: underline !important;
+}
+.items-list .sub-categoria {
+  padding: 1rem 0 0 0;
+}
+.items-list .sub-categoria li {
+  font: normal normal 300 0.875rem/0.875rem InterstateLight;
+  margin-bottom: 1.5rem;
+}
+
 .icon-float {
   width: 56px;
   height: 56px;
@@ -475,6 +560,11 @@ button:not(:disabled),
     width: 90%;
     flex-wrap: wrap;
     gap: 0.5rem;
+  }
+}
+@media screen and (min-width: 1919px) {
+  .container-wines {
+    width: 60%;
   }
 }
 .container-wines .box-wines {

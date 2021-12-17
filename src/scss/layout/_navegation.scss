@@ -9,7 +9,7 @@
     @include mobile {
         display: none;
     }
-    
+
 
     h2 {
         font: normal normal 300 0.75rem/12px InterstateLight;
@@ -105,7 +105,9 @@
             color: $tertiary;
         }
     }
+
 }
+
 
 .search {
     input {
@@ -115,6 +117,7 @@
         border-left: none;
         border-right: none;
         padding: .3rem 1.3rem;
+
         @include mobile {
             border: 1px solid #F0F0F0;
             background: #F6F6F6;
@@ -176,5 +179,56 @@
     select {
         outline: none;
         border: none;
+    }
+}
+
+// SUBMENU
+.container-grid {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    background: #ffffff;
+    border-top: 1px solid #ccc;
+    display: none;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: "featured featured items items items items";
+    z-index: 100 !important;
+    padding: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease-out;
+}
+.grid-activo {
+    display: grid;
+}
+
+.grid-featured {
+    padding: 1rem 2rem 0 0;
+    text-align: center;
+
+    h2 {
+        font: normal normal 600 12px/12px "InterstateLight";
+    }
+}
+
+.items-list {
+    .categoria {
+        font: normal normal 400 20px/24px ChronicleSemiBold;
+        cursor: pointer;
+        transition: .3s ease-out;
+
+        &:hover {
+            color: $tertiary_hover;
+            text-decoration: underline !important;
+        }
+    }
+
+    .sub-categoria {
+        padding: 1rem 0 0 0;
+
+        li {
+            font: normal normal 300 0.875rem/0.875rem InterstateLight;
+            margin-bottom: 1.5rem;
+        }
     }
 }

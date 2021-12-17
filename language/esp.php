@@ -10,7 +10,7 @@ $contact = "Contacto";
 $language = "Esp";
 
 //Textos Carousel
-$title = "En estas fiestas brinda con nosotros";
+$title = "En estas fiestas brindá con Lugi Bosca";
 $btnComprar = "Comprar";
 
 //Textosa Shop

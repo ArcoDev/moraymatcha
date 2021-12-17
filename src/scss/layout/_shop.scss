@@ -25,6 +25,10 @@
         gap: .5rem;
     }
 
+    @include monitor {
+        width: 60%;
+    }
+
     .box-wines {
         width: 224.95px;
         height: 224.95px;
