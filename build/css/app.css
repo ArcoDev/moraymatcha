@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap");
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
 @font-face {
@@ -273,7 +274,7 @@ button:not(:disabled),
 .ad {
   width: 100%;
   height: 32px;
-  background: #000000;
+  background: #C7E0BB;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
@@ -281,121 +282,136 @@ button:not(:disabled),
   z-index: 6;
 }
 .ad p {
-  font: normal normal normal 0.625rem/12px InterstateBold;
-  color: #ffffff;
+  font: normal normal 700 0.625rem/12px "Fira Sans", sans-serif;
+  color: #2E4121;
   margin-bottom: 0;
 }
 
-.menu {
-  background: #ffffff;
-  position: fixed;
-  top: 12%;
-  z-index: 6;
-  transition: 0.4s ease-out;
-}
-@media screen and (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-}
-.menu h2 {
-  font: normal normal 300 0.75rem/12px InterstateLight;
-}
-.menu h3 {
-  font: normal normal 400 1.25rem/23px TimesBold;
-  text-decoration: underline !important;
-  margin-bottom: 1rem;
-}
-.menu h3:hover {
-  color: #2E4121;
-}
-.menu p,
-.menu .mas {
-  font: normal normal 600 0.875rem/14px InterstateLight;
-  margin-bottom: 2rem;
-  color: #000000;
-}
-
-.navegation {
+.nav-mora {
   width: 100%;
   height: 70px;
   background: #ffffff;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
   z-index: 5;
   top: 3%;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 @media screen and (max-width: 767px) {
-  .navegation {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 95px;
+  .nav-mora {
+    padding: 2.5rem 1rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .navegation {
-    display: none;
-  }
-}
-
-.hamburger {
-  display: none;
-}
-@media screen and (max-width: 767px) {
-  .hamburger {
-    display: block;
-    display: block;
-    position: relative;
-    top: -18px;
-    left: 10px;
-  }
-}
-
-.box {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  width: 120px;
-  height: 37px;
-  background-image: url("../img/logo.svg");
+.nav-mora .nav-logo {
+  width: 178px;
+  height: 15px;
+  background-image: url("../img/logoMora.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0 12rem 0 2.3rem;
 }
 @media screen and (max-width: 767px) {
-  .logo {
-    margin: 0;
-    position: relative;
-    top: -16px;
-    left: 98px;
-  }
-}
-
-.items {
-  display: flex;
-  gap: 1.5rem;
-  margin: 0.5rem 18rem 0 0;
-}
-@media screen and (max-width: 767px) {
-  .items {
+  .nav-mora .nav-logo {
     display: none;
   }
 }
-.items a {
-  font: normal normal 500 0.875rem/16.1px TimesBold;
-  color: #000000;
-  transition: 0.3s ease-in-out;
+@media screen and (max-width: 767px) {
+  .nav-mora .icons-mov {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 }
-.items a:hover {
+.nav-mora .icon-logo {
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/icon-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .nav-mora .icon-logo {
+    display: block;
+    margin-top: 1rem;
+  }
+}
+.nav-mora .hamburguer {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-image: url("../img/hamburger.svg");
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .nav-mora .hamburguer {
+    display: block;
+    margin-top: 1.3rem;
+  }
+}
+.nav-mora .links {
+  display: flex;
+  gap: 1.3rem;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .nav-mora .links {
+    display: none;
+    flex-direction: column;
+    width: 45vh;
+    height: 100vh;
+    background: #ffffff;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+  }
+}
+.nav-mora .links li a {
+  font: normal normal 400 0.813rem/15px "Fira Sans", sans-serif;
   color: #2E4121;
+  transition: 0.3s ease-out;
+}
+@media screen and (max-width: 767px) {
+  .nav-mora .links li a {
+    font: normal normal 400 1.25rem/15px "Fira Sans", sans-serif;
+  }
+}
+.nav-mora .links li a:hover {
+  color: #C7E0BB;
+}
+.nav-mora .links-activo {
+  display: inline-flex;
+  left: 0;
 }
 
-.search input {
+.icon-search {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  margin-top: 0.6rem;
+}
+@media screen and (max-width: 767px) {
+  .icon-search {
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    bottom: 5%;
+    display: none;
+  }
+}
+
+.input-desc {
   width: 248px;
   outline: none;
   border-top: none;
@@ -404,31 +420,27 @@ button:not(:disabled),
   padding: 0.3rem 1.3rem;
 }
 @media screen and (max-width: 767px) {
-  .search input {
-    border: 1px solid #F0F0F0;
-    background: #F6F6F6;
-    border-radius: 4px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .search {
-    position: relative;
-    top: 21px;
-    left: -19%;
+  .input-desc {
+    display: none;
   }
 }
 
-.icon-search {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  margin-left: -3px;
-  background-image: url("../img/search.svg");
+.input-mov {
+  display: none;
 }
 @media screen and (max-width: 767px) {
-  .icon-search {
-    margin-left: 147px;
-    margin-top: 40px;
+  .input-mov {
+    width: 95%;
+    position: absolute;
+    border: 1px solid #F0F0F0;
+    background: #F0F0F0;
+    border-radius: 4px;
+    font-size: 1rem;
+    left: 3%;
+    bottom: 10%;
+  }
+  .input-mov:focus {
+    color: #828282;
   }
 }
 
@@ -437,78 +449,29 @@ button:not(:disabled),
   gap: 1rem;
   margin: 1rem 0 0 2rem;
 }
+.icons .search {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-image: url("../img/search.svg");
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .icons .search {
+    display: block;
+  }
+}
 .icons .user {
   width: 24px;
   height: 24px;
   cursor: pointer;
   background-image: url("../img/user.svg");
 }
-@media screen and (max-width: 767px) {
-  .icons .user {
-    display: none;
-  }
-}
 .icons .cart {
   width: 24px;
   height: 24px;
   cursor: pointer;
   background-image: url("../img/cart.svg");
-}
-@media screen and (max-width: 767px) {
-  .icons .cart {
-    position: relative;
-    right: 85%;
-    top: -16px;
-  }
-}
-.icons select {
-  outline: none;
-  border: none;
-}
-
-.container-grid {
-  position: absolute;
-  width: 100%;
-  top: 70px;
-  left: 0;
-  background: #ffffff;
-  border-top: 1px solid #ccc;
-  display: none;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-areas: "featured featured items items items items";
-  z-index: 100 !important;
-  padding: 2rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 1s ease-out;
-}
-
-.grid-activo {
-  display: grid;
-}
-
-.grid-featured {
-  padding: 1rem 2rem 0 0;
-  text-align: center;
-}
-.grid-featured h2 {
-  font: normal normal 600 12px/12px "InterstateLight";
-}
-
-.items-list .categoria {
-  font: normal normal 400 20px/24px ChronicleSemiBold;
-  cursor: pointer;
-  transition: 0.3s ease-out;
-}
-.items-list .categoria:hover {
-  color: #C7E0BB;
-  text-decoration: underline !important;
-}
-.items-list .sub-categoria {
-  padding: 1rem 0 0 0;
-}
-.items-list .sub-categoria li {
-  font: normal normal 300 0.875rem/0.875rem InterstateLight;
-  margin-bottom: 1.5rem;
 }
 
 .icon-float {

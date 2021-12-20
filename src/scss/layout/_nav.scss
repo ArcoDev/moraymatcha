@@ -1,0 +1,181 @@
+// Navegation mora y matcha
+.nav-mora {
+    width: 100%;
+    height: 70px;
+    background: $secondary;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    z-index: 5;
+    top: 3%;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+
+    @include mobile {
+        padding: 2.5rem 1rem;
+    }
+
+    .nav-logo {
+        width: 178px;
+        height: 15px;
+        background-image: url('../img/logoMora.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    @include mobile {
+        .icons-mov {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+    }
+
+    .icon-logo {
+        width: 46px;
+        height: 46px;
+        background-image: url('../img/icon-logo.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: none;
+
+        @include mobile {
+            display: block;
+            margin-top: 1rem;
+        }
+    }
+
+    // Menu hamburguesa
+    .hamburguer {
+        @include sizeIcons;
+        background-image: url('../img/hamburger.svg');
+        display: none;
+
+        @include mobile {
+            display: block;
+            margin-top: 1.3rem;
+        }
+    }
+
+
+    .links {
+        display: flex;
+        gap: 1.3rem;
+        margin: 0;
+
+
+        @include mobile {
+            display: none;
+            flex-direction: column;
+            width: 45vh;
+            height: 100vh;
+            background: $secondary;
+            position: absolute;
+            top: 80px;
+            left: -100%;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+            padding: 1rem;
+        }
+
+
+        li a {
+            font: normal normal 400 .813rem/15px $firaSans;
+            color: $gray;
+            transition: .3s ease-out;
+
+            @include mobile {
+                font: normal normal 400 1.25rem/15px $firaSans;
+            }
+
+            &:hover {
+                color: $tertiary_hover;
+            }
+        }
+    }
+
+    .links-activo {
+        display: inline-flex;
+        left: 0;
+    }
+}
+
+.icon-search {
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    margin-top: .6rem;
+
+    @include mobile {
+        z-index: 1;
+        width: 20px;
+        height: 20px;
+        left: 15%;
+        bottom: 5%;
+        display: none;
+    }
+}
+
+.input-desc{
+    width: 248px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: .3rem 1.3rem;
+    @include mobile {
+        display: none;
+    }
+}
+.input-mov {
+    display: none;
+    @include mobile {
+        width: 95%;
+        position: absolute;
+        border: 1px solid #F0F0F0;
+        background: #F0F0F0;
+        border-radius: 4px;
+        font-size: 1rem;
+        left: 3%;
+        bottom: 10%;
+        &:focus {
+            color: #828282;
+        }
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0 0 2rem;
+
+    .search {
+        @include sizeIcons;
+        background-image: url('../img/search.svg');
+        display: none;
+
+        @include mobile {
+            display: block;
+        }
+    }
+
+    .user {
+        @include sizeIcons;
+        background-image: url('../img/user.svg');
+    }
+
+    .cart {
+        @include sizeIcons;
+        background-image: url('../img/cart.svg');
+    }
+}

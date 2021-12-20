@@ -1,6 +1,6 @@
 <?php
 //Texto AD
-$ad = "ENVÍOS SIN CARGO A CDMX | HASTA 12 CUOTAS SIN INTERÉS";
+$ad = "ENVÍOS SIN CARGO A CABA Y GBA  |  HASTA 12 CUOTAS SIN INTERÉS";
 
 //Textos navegation 
 $wines = "Vinos";

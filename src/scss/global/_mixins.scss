@@ -45,6 +45,13 @@
 
 }
 
+// Size Icons
+@mixin sizeIcons {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
 //Media queries
 @mixin mobile {
     @media screen and (max-width: $mobile) {
