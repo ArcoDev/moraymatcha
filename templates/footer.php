@@ -1,42 +1,36 @@
  <!-- Footer -->
- <footer class="container-fluid footer mt-5">
+ <footer class="container-fluid footer">
         <div class="row px-3">
             <div class="col-12 col-md-4">
-                <img src="build/img/logoGolden.svg" alt="Icon Vinimos">
-                <h3>Bodega Luigi Bosca</h3>
+                <a href="/moraymatcha.php">
+                    <img src="build/img/logo-footer.svg" alt="Icon Vinimos">
+                </a>
+                <!-- <h3>Bodega Luigi Bosca</h3>
                 <p class="w-50">
                     <a href="https://n9.cl/sanpablo" rel="noopener">San Martin 2044, Lújan de Cuto, Mendoza, M5507EUP,
                         Argentina</a>
                 </p>
-                <img class="my-4 qr-desk" lazy="loading" src="build/img/qr.png" alt="Qr Vinimos">
+                <img class="my-4 qr-desk" lazy="loading" src="build/img/qr.png" alt="Qr Vinimos"> -->
                 <hr class="mov-line">
             </div>
             <div class="col-12 col-md-6 d-flex p-0">
                 <div class="col">
-                    <h4 class="mb-4"><?= $products ?></h4>
-                    <p>Tintos</p>
-                    <p>Blancos</p>
-                    <p>Espumantes</p>
-                    <p>Otros</p>
+                    <h4 class="mb-4">Productos</h4>
+                    <p><a href="#">Matcha</a></p>
+             </div>
+                <div class="col">
+                    <h4 class="mb-4">Asistencia online</h4>
+                    <p><a href="#">Preguntas frecuentes</a></p>
+                    <p><a href="#">Términos y condiciones</a></p>
+                    <p><a href="#">Políticas de envío</a></p>
                 </div>
                 <div class="col">
-                    <h4 class="mb-4"><?= $line ?></h4>
-                    <p>San Pablo</p>
-                    <p>San Pablo Gala</p>
-                    <p>San Pablo Fina Los Nobles</p>
-                    <p>San Pablo Mix</p>
-                    <p>La Linda</p>
-                    <p>Escencia San Pablo</p>
-                    <p>#MovistarArena</p>
+                    <h4 class="mb-4">Empresa</h4>
+                    <p><a href="#">Nosotros</a></p>
+                    <p><a href="#">Nuestra razón de ser</a></p>
                 </div>
                 <div class="col">
-                    <h4 class="mb-4"><?= $sinews ?></h4>
-                    <p><?= $questions ?></p>
-                    <p><?= $terms ?></p>
-                    <p><?= $privacy ?></p>
-                </div>
-                <div class="col">
-                    <h4><?= $institutional ?></h4>
+                    <h4>contactános</h4>
                 </div>
             </div>
             <div class="col-12 col-md-2 p-0">
@@ -49,8 +43,10 @@
             </div>
             <div class="col-12 copyright text-center">
                 <hr>
-                <img class="my-4 qr-mov" lazy="loading" src="build/img/qr.png" alt="Qr Vinimos">
-                <p><?= $copyright ?></p>
+                <!-- <img class="my-4 qr-mov" lazy="loading" src="build/img/qr.png" alt="Qr Vinimos"> -->
+                <p>© Mora & Matcha 2021 - Todos los derechos reservados  |
+                   <a href="#"> Aviso de privacidad</a> 
+                </p>
             </div>
         </div>
     </footer>

@@ -41,6 +41,7 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: "InterstateLight";
+  overflow-x: hidden !important;
 }
 
 .box-text {
@@ -305,6 +306,11 @@ button:not(:disabled),
     padding: 2.5rem 1rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .nav-mora {
+    padding: 2.5rem 1rem;
+  }
+}
 .nav-mora .nav-logo {
   width: 178px;
   height: 15px;
@@ -318,7 +324,19 @@ button:not(:disabled),
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .nav-mora .nav-logo {
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) {
+  .nav-mora .icons-mov {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .nav-mora .icons-mov {
     display: flex;
     align-items: center;
@@ -340,6 +358,12 @@ button:not(:disabled),
     margin-top: 1rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .nav-mora .icon-logo {
+    display: block;
+    margin-top: 1rem;
+  }
+}
 .nav-mora .hamburguer {
   width: 24px;
   height: 24px;
@@ -348,6 +372,12 @@ button:not(:disabled),
   display: none;
 }
 @media screen and (max-width: 767px) {
+  .nav-mora .hamburguer {
+    display: block;
+    margin-top: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .nav-mora .hamburguer {
     display: block;
     margin-top: 1.3rem;
@@ -372,6 +402,20 @@ button:not(:disabled),
     padding: 1rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .nav-mora .links {
+    display: none;
+    flex-direction: column;
+    width: 45vh;
+    height: 100vh;
+    background: #ffffff;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+  }
+}
 .nav-mora .links li a {
   font: normal normal 400 0.813rem/15px "Fira Sans", sans-serif;
   color: #2E4121;
@@ -380,6 +424,11 @@ button:not(:disabled),
 @media screen and (max-width: 767px) {
   .nav-mora .links li a {
     font: normal normal 400 1.25rem/15px "Fira Sans", sans-serif;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .nav-mora .links li a {
+    font: normal normal 400 1.5rem/15px "Fira Sans", sans-serif;
   }
 }
 .nav-mora .links li a:hover {
@@ -410,6 +459,16 @@ button:not(:disabled),
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .icon-search {
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    bottom: 5%;
+    display: none;
+  }
+}
 
 .input-desc {
   width: 248px;
@@ -424,11 +483,31 @@ button:not(:disabled),
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .input-desc {
+    display: none;
+  }
+}
 
 .input-mov {
   display: none;
 }
 @media screen and (max-width: 767px) {
+  .input-mov {
+    width: 95%;
+    position: absolute;
+    border: 1px solid #F0F0F0;
+    background: #F0F0F0;
+    border-radius: 4px;
+    font-size: 1rem;
+    left: 3%;
+    bottom: 10%;
+  }
+  .input-mov:focus {
+    color: #828282;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .input-mov {
     width: 95%;
     position: absolute;
@@ -461,6 +540,11 @@ button:not(:disabled),
     display: block;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .icons .search {
+    display: block;
+  }
+}
 .icons .user {
   width: 24px;
   height: 24px;
@@ -474,15 +558,271 @@ button:not(:disabled),
   background-image: url("../img/cart.svg");
 }
 
+.whats-matcha {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-image: url("../img/whats-matcha-desk.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5.5rem 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  .whats-matcha {
+    background-size: contain;
+    background-position: center;
+    background-image: url("../img/whats-matcha-mov.svg");
+    overflow-x: hidden;
+  }
+}
+.whats-matcha h2 {
+  font: normal normal 600 1.78rem/33px "Fira Sans", sans-serif;
+  margin-bottom: 2rem;
+  color: #2E4121;
+}
+@media screen and (max-width: 767px) {
+  .whats-matcha h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+}
+.whats-matcha .box-matcha {
+  width: 575px;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 767px) {
+  .whats-matcha .box-matcha {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.whats-matcha .box-matcha .text-matcha {
+  width: 244px;
+}
+.whats-matcha .box-matcha .text-matcha p {
+  font: normal normal 400 0.875rem/21px "Fira Sans", sans-serif;
+  color: #2E4121;
+}
+.whats-matcha .box-matcha .text-matcha p:nth-child(1) {
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .whats-matcha .box-matcha .text-matcha p:nth-child(1) {
+    margin-bottom: 1.3rem;
+  }
+}
+.whats-matcha .img-matcha {
+  position: relative;
+  top: -70px;
+  left: -70px;
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .whats-matcha .img-matcha {
+    left: 0;
+    top: -30px;
+    z-index: unset;
+  }
+}
+.whats-matcha .btn-matcha {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/fondo-btn.svg");
+  display: grid;
+  place-items: center;
+  color: #C7E0BB;
+  font: normal italic 500 0.875rem/17px "Fira Sans", sans-serif;
+  position: relative;
+  top: -200px;
+  left: -230px;
+}
+@media screen and (max-width: 767px) {
+  .whats-matcha .btn-matcha {
+    top: -115px;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/about.svg");
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 43rem 0;
+}
+@media screen and (max-width: 767px) {
+  .about {
+    padding: 30rem 0;
+  }
+}
+.about .box-about {
+  width: 591px;
+  text-align: center;
+  color: #C7E0BB;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-top: -17rem;
+}
+@media screen and (max-width: 767px) {
+  .about .box-about {
+    width: 90%;
+  }
+}
+.about .box-about h2 {
+  font: normal normal 600 1.75rem/34px "Fira Sans", sans-serif;
+}
+.about .box-about img {
+  margin-top: -20px;
+}
+.about .box-about p {
+  font: normal normal 400 0.875rem/21px "Fira Sans", sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .about .box-about p {
+    font: normal normal 400 0.775rem/21px "Fira Sans", sans-serif;
+  }
+}
+.about .tasa {
+  position: absolute;
+  right: 0;
+  margin-top: -650px;
+}
+@media screen and (max-width: 767px) {
+  .about .tasa {
+    display: none;
+  }
+}
+
+.te {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+@media screen and (max-width: 767px) {
+  .te {
+    overflow-x: hidden;
+    height: auto;
+    padding: 3rem 0;
+  }
+}
+
+.box-gradient {
+  width: 1118px;
+  height: 298px;
+  border-radius: 149px;
+  background: linear-gradient(270.13deg, #2E4121 12.43%, #8EA582 90.18%);
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .box-gradient {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+.box-gradient .info-te {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  gap: 0.7rem;
+}
+@media screen and (max-width: 767px) {
+  .box-gradient .info-te {
+    width: 50%;
+    padding-top: 1rem;
+  }
+}
+.box-gradient .info-te .icon-te {
+  width: 57px;
+  height: 57px;
+}
+.box-gradient .info-te h3 {
+  color: #ffffff;
+  font: normal normal 600 1.5rem/18px "Fira Sans", sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .box-gradient .info-te h3 {
+    font: normal normal 600 1.2rem/18px "Fira Sans", sans-serif;
+    margin: 0;
+  }
+}
+.box-gradient .info-te p {
+  color: #C7E0BB;
+  font: normal normal 400 0.875rem/17px "Fira Sans", sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .box-gradient .info-te p {
+    font: normal normal 400 0.7rem/17px "Fira Sans", sans-serif;
+    margin: 0;
+  }
+}
+.box-gradient .info-te a {
+  padding: 0.6rem 2rem;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  background-color: #C7E0BB;
+  color: #2E4121;
+  text-align: center;
+  font: normal normal 500 0.875rem/17px "Fira Sans", sans-serif;
+}
+.box-gradient .info-te .img-hoja {
+  position: relative;
+  width: 47px;
+  height: 67px;
+  bottom: -25px;
+}
+.box-gradient .img-te {
+  padding: 2rem 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  .box-gradient .img-te {
+    width: 50%;
+  }
+  .box-gradient .img-te img {
+    width: 300px;
+    position: relative;
+    right: 75px;
+  }
+}
+
 .icon-float {
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-image: url("../img/float.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: fixed;
   bottom: 3%;
   right: 1%;
   z-index: 2;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.377);
 }
 
 .shop {
@@ -497,7 +837,7 @@ button:not(:disabled),
   }
 }
 .shop h2 {
-  font: normal normal 700 1.78rem/32.2px TimesBold;
+  font: normal normal 600 1.78rem/33px "Fira Sans", sans-serif;
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 767px) {
@@ -607,7 +947,7 @@ button:not(:disabled),
   place-items: center;
 }
 .recommended h2 {
-  font: normal normal 700 1.78rem/32.2px TimesBold;
+  font: normal normal 600 1.78rem/33px "Fira Sans", sans-serif;
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 767px) {
@@ -705,7 +1045,7 @@ button:not(:disabled),
   }
 }
 .sold h2 {
-  font: normal normal 700 1.78rem/32.2px TimesBold;
+  font: normal normal 600 1.78rem/33px "Fira Sans", sans-serif;
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 767px) {
@@ -862,11 +1202,13 @@ button:not(:disabled),
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
+  margin-top: -70px;
 }
 .benefits h2 {
-  font: normal normal 700 1.78rem/32.2px TimesBold;
+  font: normal normal 600 1.78rem/33px "Fira Sans", sans-serif;
   margin-bottom: 2rem;
   margin: 1rem 0 3.5rem 0;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 767px) {
   .benefits h2 {
@@ -882,6 +1224,8 @@ button:not(:disabled),
 .benefits .container-benefits {
   width: 75%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
@@ -892,7 +1236,6 @@ button:not(:disabled),
 }
 .benefits .container-benefits .box-benefits {
   width: 25%;
-  border-right: 1px solid #F0F0F0;
 }
 .benefits .container-benefits .box-benefits:nth-child(4) {
   border: none;
@@ -903,12 +1246,12 @@ button:not(:disabled),
   }
 }
 .benefits .container-benefits img {
-  height: 45px;
+  height: 87px;
 }
 .benefits .container-benefits p {
   margin: 1rem auto;
-  font: normal normal bold 0.75rem/14px TimesBold;
-  color: #000000;
+  font: normal italic bold 1rem/14px "Fira Sans", sans-serif;
+  color: #2E4121;
 }
 .benefits .container-benefits p.one {
   width: 94px;
@@ -918,8 +1261,8 @@ button:not(:disabled),
 }
 .benefits .container-benefits a {
   margin: 1rem auto;
-  font: normal normal bold 0.75rem/14px TimesBold;
-  color: #000000;
+  font: normal italic bold 1rem/14px "Fira Sans", sans-serif;
+  color: #2E4121;
   width: 100% !important;
   text-decoration: underline !important;
   transition: 0.3s ease-out;
@@ -932,7 +1275,7 @@ button:not(:disabled),
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
-  margin: 5rem 0;
+  margin: 5rem 0 0 0;
   padding: 2rem 8rem;
   background: #C7E0BB;
 }
@@ -946,7 +1289,9 @@ button:not(:disabled),
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .newsletter {
-    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 1rem;
   }
 }
 
@@ -957,25 +1302,37 @@ button:not(:disabled),
   display: flex;
   margin: 0 0 0.3rem 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .box-news .mail {
+    justify-content: center;
+  }
+}
 .box-news .mail h3 {
-  font: normal normal bold 1.5rem/28px TimesBold;
+  font: normal normal bold 1.5rem/28px "Fira Sans", sans-serif;
   margin: 0.3rem 0 0 0.3rem;
 }
 @media screen and (max-width: 767px) {
   .box-news .mail h3 {
     width: 250px;
-    font: normal normal bold 1.375rem/20px TimesBold;
+    font: normal normal bold 1.375rem/20px "Fira Sans", sans-serif;
   }
 }
 .box-news p {
   width: 442px;
-  font: normal normal 300 0.875rem/20px InterstateLight;
+  font: normal normal 400 0.875rem/20px "Fira Sans", sans-serif;
 }
 @media screen and (max-width: 767px) {
   .box-news p {
     width: 275px;
-    font: normal normal 300 1rem/20px InterstateLight;
+    font: normal normal 400 1rem/20px "Fira Sans", sans-serif;
     margin: 0.5rem 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .box-news p {
+    width: 100%;
+    font: normal normal 400 1rem/20px "Fira Sans", sans-serif;
+    text-align: center;
   }
 }
 .box-news .box-form form {
@@ -986,8 +1343,13 @@ button:not(:disabled),
     flex-direction: column;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .box-news .box-form form .box-input {
+    flex: 1;
+  }
+}
 .box-news .box-form form label {
-  font: normal normal bold 0.75rem/14px InterstateLight;
+  font: normal normal bold 0.75rem/14px "Fira Sans", sans-serif;
   margin-bottom: 0.3rem;
 }
 .box-news .box-form form input {
@@ -1002,20 +1364,26 @@ button:not(:disabled),
     width: 333px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .box-news .box-form form input {
+    width: 100%;
+  }
+}
 .box-news .box-form form input::placeholder {
   color: #000000;
 }
 .box-news .box-form form button {
   width: 128px;
   height: 48px;
-  background: #000000;
+  background: #2E4121;
   color: #ffffff !important;
   border-radius: 4px;
   padding: 0.5rem 0 0 0;
+  border-radius: 24px;
   border: none;
   padding: 0;
   margin: 0.3rem 0 0 0.5rem;
-  font: normal normal bold 0.875rem/17px InterstateLight;
+  font: normal normal bold 0.875rem/17px "Fira Sans", sans-serif;
 }
 @media screen and (max-width: 767px) {
   .box-news .box-form form button {
@@ -1078,7 +1446,7 @@ button:not(:disabled),
 }
 
 .footer {
-  background: #2E4121;
+  background-color: #2E4121;
   padding: 3rem 0 0.5rem 0;
 }
 .footer .row {
@@ -1108,12 +1476,23 @@ button:not(:disabled),
     text-align: left;
     margin: 2rem 0 0 1rem;
   }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .footer .row .copyright p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
   .footer .row .qr-mov {
     display: block;
   }
+}
+@media screen and (max-width: 767px) {
   .footer .row .mov-line {
     display: block;
   }
+}
+@media screen and (max-width: 767px) {
   .footer .row .d-flex {
     flex-direction: column;
   }
@@ -1122,15 +1501,12 @@ button:not(:disabled),
   }
 }
 .footer .row h3 {
-  font: normal normal 700 1rem/13.34px InterstateLight;
+  font: normal normal 700 1rem/13.34px "Fira Sans", sans-serif;
   margin: 3rem 0 2rem 0;
 }
 .footer .row p {
-  font: normal normal 100 0.75rem/13.34px InterstateLight;
+  font: normal normal 100 0.75rem/13.34px "Fira Sans", sans-serif;
   transition: 0.3s ease-out;
-}
-.footer .row p:hover {
-  color: #C7E0BB;
 }
 .footer .row p a {
   color: #ffffff;
@@ -1140,5 +1516,5 @@ button:not(:disabled),
   color: #C7E0BB;
 }
 .footer .row h4 {
-  font: normal normal 400 1rem/13.34px InterstateLight;
+  font: normal normal 400 1rem/13.34px "Fira Sans", sans-serif;
 }

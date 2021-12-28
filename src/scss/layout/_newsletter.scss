@@ -1,7 +1,7 @@
 .newsletter {
     @include grid(2);
     place-items: center;
-    margin: 5rem 0;
+    margin: 5rem 0 0 0;
     padding: 2rem 8rem;
     background: $tertiary_hover;
 
@@ -10,8 +10,10 @@
         padding: 2rem 1rem;
         margin: 3rem 0;
     }
+
     @include tablet {
-        padding: 2rem;
+        @include grid(1);
+        padding: 2rem 1rem;
     }
 }
 
@@ -22,13 +24,17 @@
         display: flex;
         margin: 0 0 .3rem 0;
 
+        @include tablet {
+            justify-content: center;
+        }
+
         h3 {
-            font: normal normal bold 1.5rem/28px TimesBold;
+            font: normal normal bold 1.5rem/28px $firaSans;
             margin: .3rem 0 0 .3rem;
 
             @include mobile {
                 width: 250px;
-                font: normal normal bold 1.375rem/20px TimesBold;
+                font: normal normal bold 1.375rem/20px $firaSans;
 
             }
         }
@@ -36,11 +42,18 @@
 
     p {
         width: 442px;
-        font: normal normal 300 0.875rem/20px InterstateLight;
+        font: normal normal 400 0.875rem/20px $firaSans;
+
         @include mobile {
             width: 275px;
-            font: normal normal 300 1rem/20px InterstateLight;
+            font: normal normal 400 1rem/20px $firaSans;
             margin: .5rem 0;
+        }
+
+        @include tablet {
+            width: 100%;
+            font: normal normal 400 1rem/20px $firaSans;
+            text-align: center;
 
         }
     }
@@ -52,8 +65,14 @@
             flex-direction: column;
         }
 
+        @include tablet {
+            .box-input {
+                flex: 1;
+            }
+        }
+
         label {
-            font: normal normal bold 0.75rem/14px InterstateLight;
+            font: normal normal bold 0.75rem/14px $firaSans;
             margin-bottom: .3rem;
         }
 
@@ -63,9 +82,15 @@
             border: none;
             border-bottom: 1px solid $primary;
             outline: none;
+
             @include mobile {
                 width: 333px;
             }
+
+            @include tablet {
+                width: 100%;
+            }
+
             &::placeholder {
                 color: $primary;
 
@@ -73,11 +98,13 @@
         }
 
         button {
-            @include btnBuy(128px, 48px, $primary, $secondary);
+            @include btnBuy(128px, 48px, $tertiary, $secondary);
+            border-radius: 24px;
             border: none;
             padding: 0;
             margin: .3rem 0 0 .5rem;
-            font: normal normal bold 0.875rem/17px InterstateLight;
+            font: normal normal bold 0.875rem/17px $firaSans;
+
             @include mobile {
                 width: 100%;
                 margin: 1rem 0 0 0;

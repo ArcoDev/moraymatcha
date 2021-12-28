@@ -16,6 +16,10 @@
         padding: 2.5rem 1rem;
     }
 
+    @include tablet {
+        padding: 2.5rem 1rem;
+    }
+
     .nav-logo {
         width: 178px;
         height: 15px;
@@ -27,9 +31,22 @@
         @include mobile {
             display: none;
         }
+        @include tablet {
+            display: none;
+        }
+        
+
     }
 
     @include mobile {
+        .icons-mov {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+    }
+
+    @include tablet {
         .icons-mov {
             display: flex;
             align-items: center;
@@ -50,6 +67,11 @@
             display: block;
             margin-top: 1rem;
         }
+
+        @include tablet {
+            display: block;
+            margin-top: 1rem;
+        }
     }
 
     // Menu hamburguesa
@@ -59,6 +81,10 @@
         display: none;
 
         @include mobile {
+            display: block;
+            margin-top: 1.3rem;
+        }
+        @include tablet {
             display: block;
             margin-top: 1.3rem;
         }
@@ -84,6 +110,19 @@
             padding: 1rem;
         }
 
+        @include tablet {
+            display: none;
+            flex-direction: column;
+            width: 45vh;
+            height: 100vh;
+            background: $secondary;
+            position: absolute;
+            top: 80px;
+            left: -100%;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+            padding: 1rem;
+        }
+
 
         li a {
             font: normal normal 400 .813rem/15px $firaSans;
@@ -92,6 +131,11 @@
 
             @include mobile {
                 font: normal normal 400 1.25rem/15px $firaSans;
+            }
+
+            @include tablet {
+                font: normal normal 400 1.5rem/15px $firaSans;
+
             }
 
             &:hover {
@@ -124,6 +168,14 @@
         bottom: 5%;
         display: none;
     }
+    @include tablet {
+        z-index: 1;
+        width: 20px;
+        height: 20px;
+        left: 15%;
+        bottom: 5%;
+        display: none;
+    }
 }
 
 .input-desc{
@@ -136,10 +188,27 @@
     @include mobile {
         display: none;
     }
+    @include tablet {
+        display: none;
+    }
 }
 .input-mov {
     display: none;
     @include mobile {
+        width: 95%;
+        position: absolute;
+        border: 1px solid #F0F0F0;
+        background: #F0F0F0;
+        border-radius: 4px;
+        font-size: 1rem;
+        left: 3%;
+        bottom: 10%;
+        &:focus {
+            color: #828282;
+        }
+    }
+
+    @include tablet {
         width: 95%;
         position: absolute;
         border: 1px solid #F0F0F0;
@@ -165,6 +234,9 @@
         display: none;
 
         @include mobile {
+            display: block;
+        }
+        @include tablet {
             display: block;
         }
     }

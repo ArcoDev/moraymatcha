@@ -1,5 +1,5 @@
 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="28" cy="28" r="28" fill="black"/>
+<circle cx="28" cy="28" r="28" fill="#C7E0BB"/>
 <g clip-path="url(#clip0)">
 <path d="M28 12.9414C19.7176 12.9414 12.9412 19.7179 12.9412 28.0002C12.9412 30.5414 13.6 32.9885 14.7294 35.0591L12.9412 42.1179L18.6823 39.8591C21.2235 41.8355 24.5176 43.0591 28 43.0591C36.2823 43.0591 43.0588 36.2826 43.0588 28.0002C43.0588 19.7179 36.2823 12.9414 28 12.9414Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </g>

@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="Vinimos">
     <title>Mora y Matcha</title>
     <link rel="canonical" href="">
-    <link rel="shortcut icon" href="build/img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="build/img/icon-logo.svg" type="image/x-icon">
     <!-- CSS Personal -->
     <link rel="stylesheet" href="build/css/app.css">
     <!-- CSS GliderJS-->
