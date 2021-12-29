@@ -44,20 +44,21 @@
 <!--Carousel-->
 <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <div class="box-text">
+        <!-- <div class="box-text">
             <h1><?= $title ?></h1>
             <a href="#" rel="noopener ">
                 <button class="btn btn-buy"><?= $btnComprar ?></button>
             </a>
-        </div>
+        </div> -->
         <div class="carousel-item active">
-            <div class="slider slider1"></div>
+            <a href="#">
+                <div class="slider slider1"></div>
+            </a>
         </div>
         <div class="carousel-item">
-            <div class="slider slider2"></div>
-        </div>
-        <div class="carousel-item">
-            <div class="slider slider3"></div>
+            <a href="#">
+                <div class="slider slider2"></div>
+            </a>
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

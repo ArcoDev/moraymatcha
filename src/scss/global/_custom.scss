@@ -18,14 +18,17 @@
     font-family: "ChronicleBlack";
     src: url('../font/Chronicle-Display-Black.otf');
 }
+
 @font-face {
     font-family: "ChronicleLight";
     src: url('../font/Chronicle-Display-Light.otf');
 }
+
 @font-face {
     font-family: "ChronicleRoman";
     src: url('../font/Chronicle-Display-Roman.otf');
 }
+
 @font-face {
     font-family: "ChronicleSemiBold";
     src: url('../font/Chronicle-Display-Semibold.otf');
@@ -47,7 +50,7 @@ body {
     padding: 0;
     font-size: 16px;
     font-family: "InterstateLight";
-    overflow-x: hidden!important;
+    overflow-x: hidden !important;
 }
 
 //Custom carousel
@@ -104,14 +107,14 @@ body {
     }
 }
 
-.carousel-item::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #A8A8A8;
-    mix-blend-mode: multiply;
-}
+// .carousel-item::before {
+//     content: '';
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     background: #A8A8A8;
+//     mix-blend-mode: multiply;
+// }
 
 .slider {
     width: 100%;
@@ -126,20 +129,24 @@ body {
 }
 
 .slider1 {
-    background-image: url('../img/slider1.png');
+    background-image: url('../img/slider1.svg');
 
     @include mobile {
-        background-image: url('../img/mov-slider1.png');
+        background-image: url('../img/slider1-mov.svg');
     }
 }
 
 .slider2 {
-    background-image: url('../img/slider2.jpg');
+    background-image: url('../img/slider2.svg');
+
+    @include mobile {
+        background-image: url('../img/slider2-mov.svg');
+    }
 }
 
-.slider3 {
-    background-image: url('../img/slider3.jpg');
-}
+// .slider3 {
+//     background-image: url('../img/slider3.jpg');
+// }
 
 
 button:not(:disabled),
@@ -164,7 +171,7 @@ button:not(:disabled),
 
     @include monitor {
         left: 14%;
-        bottom: 5rem;
+        bottom: 1.3rem;
     }
 }
 
@@ -183,7 +190,7 @@ button:not(:disabled),
 
     @include monitor {
         left: -94rem;
-        bottom: 5rem;
+        bottom: 1.3rem;
     }
 }
 
@@ -200,8 +207,9 @@ button:not(:disabled),
 
     h5 {
         font: normal normal bold 1rem/18px ChronicleBlack;
-         width: 150px;
-         margin: 0 auto;
+        width: 150px;
+        margin: 0 auto;
+
         &.mb-4 {
             margin-bottom: 1.8rem !important;
         }

@@ -92,15 +92,6 @@ body {
   }
 }
 
-.carousel-item::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #A8A8A8;
-  mix-blend-mode: multiply;
-}
-
 .slider {
   width: 100%;
   height: 500px;
@@ -115,20 +106,21 @@ body {
 }
 
 .slider1 {
-  background-image: url("../img/slider1.png");
+  background-image: url("../img/slider1.svg");
 }
 @media screen and (max-width: 767px) {
   .slider1 {
-    background-image: url("../img/mov-slider1.png");
+    background-image: url("../img/slider1-mov.svg");
   }
 }
 
 .slider2 {
-  background-image: url("../img/slider2.jpg");
+  background-image: url("../img/slider2.svg");
 }
-
-.slider3 {
-  background-image: url("../img/slider3.jpg");
+@media screen and (max-width: 767px) {
+  .slider2 {
+    background-image: url("../img/slider2-mov.svg");
+  }
 }
 
 button:not(:disabled),
@@ -165,7 +157,7 @@ button:not(:disabled),
 @media screen and (min-width: 1919px) {
   .carousel-control-prev-icon {
     left: 14%;
-    bottom: 5rem;
+    bottom: 1.3rem;
   }
 }
 
@@ -196,7 +188,7 @@ button:not(:disabled),
 @media screen and (min-width: 1919px) {
   .carousel-control-next-icon {
     left: -94rem;
-    bottom: 5rem;
+    bottom: 1.3rem;
   }
 }
 
@@ -1284,7 +1276,6 @@ button:not(:disabled),
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 2rem 1rem;
-    margin: 3rem 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
