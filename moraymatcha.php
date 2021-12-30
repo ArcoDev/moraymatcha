@@ -12,8 +12,8 @@
     <a class="icons-mov" href="#">
         <div class="nav-logo"></div>
         <div class="icon-logo"></div>
-        <div id="nav-mov" class="hamburguer"></div>
     </a>
+    <div id="nav-mov" class="hamburguer"></div>
     <ul class="links">
         <li><a href="#whats-matcha">¿Qué es matcha?</a></li>
         <li><a href="#about">Quiénes somos</a></li>

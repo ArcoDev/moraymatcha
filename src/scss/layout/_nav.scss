@@ -84,6 +84,7 @@
         @include mobile {
             display: block;
             margin-top: 1.3rem;
+            margin-left: -3rem;
         }
 
         @include tablet {

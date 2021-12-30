@@ -18,6 +18,10 @@ navMov.addEventListener('click', () => {
     links.classList.toggle('activo');
 });
 
+links.addEventListener('click', () => {
+    links.classList.remove('activo');
+})
+
 // FUNCIONALIDAD ICON SEARCH
 const search = document.getElementById('icon-search');
 const inputSrc = document.getElementById('search');
