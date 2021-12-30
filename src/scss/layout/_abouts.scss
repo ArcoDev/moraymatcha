@@ -31,15 +31,17 @@
         h2 {
             font: normal normal 600 1.75rem/34px $firaSans;
         }
+
         img {
             margin-top: -20px;
         }
 
         p {
             font: normal normal 400 .875rem/21px $firaSans;
+
             @include mobile {
-            font: normal normal 400 .775rem/21px $firaSans;
-                
+                font: normal normal 400 .775rem/21px $firaSans;
+
             }
         }
     }
@@ -48,6 +50,7 @@
         position: absolute;
         right: 0;
         margin-top: -650px;
+
         @include mobile {
             display: none;
         }

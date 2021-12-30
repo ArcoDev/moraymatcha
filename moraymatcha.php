@@ -15,19 +15,20 @@
         <div id="nav-mov" class="hamburguer"></div>
     </a>
     <ul class="links">
-        <li><a href="#">¿Qué es matcha?</a></li>
-        <li><a href="#">Quiénes somos</a></li>
-        <li><a href="#">Beneficios</a></li>
-        <li><a href="#">Matcha</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#whats-matcha">¿Qué es matcha?</a></li>
+        <li><a href="#about">Quiénes somos</a></li>
+        <li><a href="#benefits">Beneficios</a></li>
+        <li><a href="#matcha">Matcha</a></li>
+        <li><a href="#contact">Contacto</a></li>
     </ul>
     <div class="search">
         <div class="icon-search"></div>
         <input class="input-desc" type="search" name="search">
         <input class="input-mov" type="search" name="search" id="search" placeholder="Buscar...">
+        <span id="close-search" class="close-search">X</span>
     </div>
     <div class="icons">
-        <a href="#" class="search"></a>
+        <a href="#" id="icon-search" class="search"></a>
         <a href="#" class="user"></a>
         <a href="#" class="cart"></a>
     </div>
@@ -73,6 +74,7 @@
 <!--End Carousel-->
 
 <!-- What is matcha -->
+<div id="whats-matcha"></div>
 <section class="whats-matcha">
     <h2>¿QUÉ ES MATCHA?</h2>
     <div class="box-matcha">
@@ -88,6 +90,7 @@
 <!-- End what is matcha -->
 
 <!-- Abouts -->
+<div id="about"></div>
 <section class="about">
     <div class="box-about">
         <h2>¿QUIÉNES SOMOS?</h2>
@@ -106,6 +109,7 @@
 <!-- End Abouts -->
 
 <!-- Benefits -->
+<div id="benefits"></div>
 <section class="benefits">
     <h2>Beneficios</h2>
     <div class="container-benefits">
@@ -126,6 +130,7 @@
 <!-- End Benefits -->
 
 <!-- Box Te -->
+<div id="matcha"></div>
 <section class="te">
     <div class="box-gradient">
         <div class="info-te">
@@ -143,6 +148,7 @@
 <!-- End Te -->
 
 <!-- Newsletter -->
+<div id="contact"></div>
 <article class="newsletter">
     <div class="box-news">
         <div class="mail">

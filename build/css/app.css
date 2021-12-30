@@ -34,6 +34,7 @@ html {
   box-sizing: border-box;
   list-style: none;
   text-decoration: none !important;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -382,7 +383,6 @@ button:not(:disabled),
 }
 @media screen and (max-width: 767px) {
   .nav-mora .links {
-    display: none;
     flex-direction: column;
     width: 45vh;
     height: 100vh;
@@ -392,6 +392,10 @@ button:not(:disabled),
     left: -100%;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
     padding: 1rem;
+    transition: 0.5s ease-out;
+  }
+  .nav-mora .links.activo {
+    left: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -425,10 +429,6 @@ button:not(:disabled),
 }
 .nav-mora .links li a:hover {
   color: #C7E0BB;
-}
-.nav-mora .links-activo {
-  display: inline-flex;
-  left: 0;
 }
 
 .icon-search {
@@ -512,6 +512,27 @@ button:not(:disabled),
   }
   .input-mov:focus {
     color: #828282;
+  }
+}
+
+.close-search {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .close-search {
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: #F0F0F0;
+    color: #828282;
+    position: absolute;
+    right: 10px;
+    bottom: 16px;
+    z-index: 10;
+  }
+  .close-search.active-close {
+    display: flex;
   }
 }
 
